@@ -1,0 +1,15 @@
+C:\Users\mfsv_\Documents\GitHub\TiendaGeek\TiendaGeek\Entities\bin\Debug\net8.0\Entities.deps.json
+C:\Users\mfsv_\Documents\GitHub\TiendaGeek\TiendaGeek\Entities\bin\Debug\net8.0\Entities.runtimeconfig.json
+C:\Users\mfsv_\Documents\GitHub\TiendaGeek\TiendaGeek\Entities\bin\Debug\net8.0\Entities.dll
+C:\Users\mfsv_\Documents\GitHub\TiendaGeek\TiendaGeek\Entities\bin\Debug\net8.0\Entities.pdb
+C:\Users\mfsv_\Documents\GitHub\TiendaGeek\TiendaGeek\Entities\obj\Debug\net8.0\Entities.csproj.AssemblyReference.cache
+C:\Users\mfsv_\Documents\GitHub\TiendaGeek\TiendaGeek\Entities\obj\Debug\net8.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mfsv_\Documents\GitHub\TiendaGeek\TiendaGeek\Entities\obj\Debug\net8.0\Entities.AssemblyInfoInputs.cache
+C:\Users\mfsv_\Documents\GitHub\TiendaGeek\TiendaGeek\Entities\obj\Debug\net8.0\Entities.AssemblyInfo.cs
+C:\Users\mfsv_\Documents\GitHub\TiendaGeek\TiendaGeek\Entities\obj\Debug\net8.0\Entities.csproj.CoreCompileInputs.cache
+C:\Users\mfsv_\Documents\GitHub\TiendaGeek\TiendaGeek\Entities\obj\Debug\net8.0\Entities.sourcelink.json
+C:\Users\mfsv_\Documents\GitHub\TiendaGeek\TiendaGeek\Entities\obj\Debug\net8.0\Entities.dll
+C:\Users\mfsv_\Documents\GitHub\TiendaGeek\TiendaGeek\Entities\obj\Debug\net8.0\refint\Entities.dll
+C:\Users\mfsv_\Documents\GitHub\TiendaGeek\TiendaGeek\Entities\obj\Debug\net8.0\Entities.pdb
+C:\Users\mfsv_\Documents\GitHub\TiendaGeek\TiendaGeek\Entities\obj\Debug\net8.0\Entities.genruntimeconfig.cache
+C:\Users\mfsv_\Documents\GitHub\TiendaGeek\TiendaGeek\Entities\obj\Debug\net8.0\ref\Entities.dll
