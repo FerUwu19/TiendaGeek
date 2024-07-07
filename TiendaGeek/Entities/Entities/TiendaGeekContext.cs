@@ -17,7 +17,7 @@ public partial class TiendaGeekContext : DbContext
 
     public virtual DbSet<Carrito> Carritos { get; set; }
 
-    public virtual DbSet<Categorium> Categoria { get; set; }
+    public virtual DbSet<Categoria> Categoria { get; set; }
 
     public virtual DbSet<ImagenProducto> ImagenProductos { get; set; }
 
@@ -51,7 +51,7 @@ public partial class TiendaGeekContext : DbContext
                 .HasConstraintName("FK__Carrito__CodigoU__534D60F1");
         });
 
-        modelBuilder.Entity<Categorium>(entity =>
+        modelBuilder.Entity<Categoria>(entity =>
         {
             entity.HasKey(e => e.CodigoCategoria).HasName("PK__Categori__3CEE2F4C6E06DB14");
 

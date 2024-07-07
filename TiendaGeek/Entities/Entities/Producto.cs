@@ -21,7 +21,7 @@ public partial class Producto
 
     public virtual ICollection<Carrito> Carritos { get; set; } = new List<Carrito>();
 
-    public virtual Categorium? CodigoCategoriaNavigation { get; set; }
+    public virtual Categoria? CodigoCategoriaNavigation { get; set; }
 
     public virtual ICollection<ImagenProducto> ImagenProductos { get; set; } = new List<ImagenProducto>();
 }
