@@ -1,0 +1,71 @@
+﻿@model IEnumerable<FrontEnd.Models.ProductoViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CodigoProducto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CodigoCategoria)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Descripcion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Precio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Unidades)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Estado)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CodigoProducto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CodigoCategoria)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descripcion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Precio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Unidades)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Estado)
+            </td>
+            <td>
+                    @Html.ActionLink("Edit", "Edit", new { id=item.CodigoProducto }) |
+                    @Html.ActionLink("Details", "Details", new { id=item.CodigoProducto  }) |
+                    @Html.ActionLink("Delete", "Delete", new { id=item.CodigoProducto  })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
