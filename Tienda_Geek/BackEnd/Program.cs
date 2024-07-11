@@ -21,6 +21,12 @@ builder.Services.AddDbContext<TiendaGeekContext>();
 builder.Services.AddScoped<IProductoDAL, ProductoDALImpl>();
 builder.Services.AddScoped<IProductoService, ProductoService>();
 builder.Services.AddScoped<IUnidadDeTrabajo, UnidadDeTrabajo>();
+
+builder.Services.AddScoped<IHistorialPedidoDAL, ImplHistorialPedidoDAL>();
+builder.Services.AddScoped<IHistorialPedidoServices, ImplHistorialPedidoServices>();
+
+builder.Services.AddScoped<IImagenProductoDAL, ImplImagenProductoDAL>();
+builder.Services.AddScoped<IImagenProductoServices, ImplImagenProductoServices>();
 #endregion
 
 var app = builder.Build();

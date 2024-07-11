@@ -26,3 +26,18 @@ C:\Users\mfsv_\source\repos\TiendaGeek\Entities\obj\Debug\net8.0\refint\Entities
 C:\Users\mfsv_\source\repos\TiendaGeek\Entities\obj\Debug\net8.0\Entities.pdb
 C:\Users\mfsv_\source\repos\TiendaGeek\Entities\obj\Debug\net8.0\Entities.genruntimeconfig.cache
 C:\Users\mfsv_\source\repos\TiendaGeek\Entities\obj\Debug\net8.0\ref\Entities.dll
+F:\PROGRA AVANZADA WEB\2 avance\TiendaGeek\Tienda_Geek\Entities\bin\Debug\net8.0\Entities.deps.json
+F:\PROGRA AVANZADA WEB\2 avance\TiendaGeek\Tienda_Geek\Entities\bin\Debug\net8.0\Entities.runtimeconfig.json
+F:\PROGRA AVANZADA WEB\2 avance\TiendaGeek\Tienda_Geek\Entities\bin\Debug\net8.0\Entities.dll
+F:\PROGRA AVANZADA WEB\2 avance\TiendaGeek\Tienda_Geek\Entities\bin\Debug\net8.0\Entities.pdb
+F:\PROGRA AVANZADA WEB\2 avance\TiendaGeek\Tienda_Geek\Entities\obj\Debug\net8.0\Entities.csproj.AssemblyReference.cache
+F:\PROGRA AVANZADA WEB\2 avance\TiendaGeek\Tienda_Geek\Entities\obj\Debug\net8.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+F:\PROGRA AVANZADA WEB\2 avance\TiendaGeek\Tienda_Geek\Entities\obj\Debug\net8.0\Entities.AssemblyInfoInputs.cache
+F:\PROGRA AVANZADA WEB\2 avance\TiendaGeek\Tienda_Geek\Entities\obj\Debug\net8.0\Entities.AssemblyInfo.cs
+F:\PROGRA AVANZADA WEB\2 avance\TiendaGeek\Tienda_Geek\Entities\obj\Debug\net8.0\Entities.csproj.CoreCompileInputs.cache
+F:\PROGRA AVANZADA WEB\2 avance\TiendaGeek\Tienda_Geek\Entities\obj\Debug\net8.0\Entities.sourcelink.json
+F:\PROGRA AVANZADA WEB\2 avance\TiendaGeek\Tienda_Geek\Entities\obj\Debug\net8.0\Entities.dll
+F:\PROGRA AVANZADA WEB\2 avance\TiendaGeek\Tienda_Geek\Entities\obj\Debug\net8.0\refint\Entities.dll
+F:\PROGRA AVANZADA WEB\2 avance\TiendaGeek\Tienda_Geek\Entities\obj\Debug\net8.0\Entities.pdb
+F:\PROGRA AVANZADA WEB\2 avance\TiendaGeek\Tienda_Geek\Entities\obj\Debug\net8.0\Entities.genruntimeconfig.cache
+F:\PROGRA AVANZADA WEB\2 avance\TiendaGeek\Tienda_Geek\Entities\obj\Debug\net8.0\ref\Entities.dll

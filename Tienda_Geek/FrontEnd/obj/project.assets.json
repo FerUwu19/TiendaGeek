@@ -6321,19 +6321,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mfsv_\\.nuget\\packages\\": {}
+    "C:\\Users\\kengc\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mfsv_\\source\\repos\\TiendaGeek\\FrontEnd\\FrontEnd.csproj",
+      "projectUniqueName": "F:\\PROGRA AVANZADA WEB\\2 avance\\TiendaGeek\\Tienda_Geek\\FrontEnd\\FrontEnd.csproj",
       "projectName": "FrontEnd",
-      "projectPath": "C:\\Users\\mfsv_\\source\\repos\\TiendaGeek\\FrontEnd\\FrontEnd.csproj",
-      "packagesPath": "C:\\Users\\mfsv_\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mfsv_\\source\\repos\\TiendaGeek\\FrontEnd\\obj\\",
+      "projectPath": "F:\\PROGRA AVANZADA WEB\\2 avance\\TiendaGeek\\Tienda_Geek\\FrontEnd\\FrontEnd.csproj",
+      "packagesPath": "C:\\Users\\kengc\\.nuget\\packages\\",
+      "outputPath": "F:\\PROGRA AVANZADA WEB\\2 avance\\TiendaGeek\\Tienda_Geek\\FrontEnd\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\mfsv_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\kengc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

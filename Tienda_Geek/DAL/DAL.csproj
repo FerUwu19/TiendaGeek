@@ -10,4 +10,12 @@
     <ProjectReference Include="..\Entities\Entities.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <EditorConfigFiles Remove="F:\PROGRA AVANZADA WEB\2 avance\TiendaGeek\Tienda_Geek\DAL\Impletations\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="F:\PROGRA AVANZADA WEB\2 avance\TiendaGeek\Tienda_Geek\DAL\Impletations\.editorconfig" />
+  </ItemGroup>
+
 </Project>
