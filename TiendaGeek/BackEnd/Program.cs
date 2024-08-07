@@ -28,6 +28,9 @@ builder.Services.AddScoped<IImagenProductoServices, ImplImagenProductoServices>(
 builder.Services.AddScoped<ICategoriumDAL, CategoriumDALImpl>();
 builder.Services.AddScoped<ICategoriumService, CategoriumService>();
 
+builder.Services.AddScoped<IHistorialPedidoDAL, ImplHistorialPedidoDAL>();
+builder.Services.AddScoped<IHistorialPedidoServices, ImplHistorialPedidoServices>();
+
 builder.Services.AddScoped<IUnidadDeTrabajo, UnidadDeTrabajo>();
 #endregion
 
