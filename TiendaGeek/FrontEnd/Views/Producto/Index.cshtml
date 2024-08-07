@@ -1,0 +1,115 @@
+﻿@model IEnumerable<FrontEnd.Models.ProductoViewModel>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Untree.co">
+    <link rel="shortcut icon" href="favicon.png">
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="bootstrap, bootstrap4" />
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="css/tiny-slider.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Furni Free Bootstrap 5 Template for Furniture and Interior Design Websites by Untree.co </title>
+</head>
+
+<body>
+
+    @{
+        ViewBag.Title = "Lista de Productos";
+        var categoriasSeleccionadas = ViewBag.CurrentCategories as List<int> ?? new List<int>();
+        var sortOrder = ViewBag.CurrentSortOrder as string ?? "";
+        var categoriasDisponibles = ViewBag.CategoriasDisponibles as IEnumerable<FrontEnd.Models.CategoriumViewModel>;
+    }
+    <div class="container">
+        <div class="row mb-4">
+            <div class="col-lg-12">
+
+                <!-- Sidebar para categorías -->
+                <div class="col-md-3">
+                    <h4>Filtrar por Categoría</h4>
+                    <form asp-action="Index" method="get">
+                        <div class="mb-3">
+                            <input type="hidden" name="sortOrder" value="@sortOrder" />
+                            @foreach (var categoria in categoriasDisponibles)
+                            {
+                                <div class="mb-2">
+                                    <input type="checkbox" class="me-2" id="Categories-@(categoria.CodigoCategoria)" name="categorias" value="@categoria.CodigoCategoria" @(categoriasSeleccionadas.Contains(categoria.CodigoCategoria) ? "checked" : "") />
+                                    <label for="Categories-@(categoria.CodigoCategoria)">@categoria.Nombre</label>
+                                </div>
+                            }
+                        </div>
+                        <button type="submit" class="btn btn-primary">Filtrar</button>
+                    </form>
+                </div>
+
+                @using (Html.BeginForm("Index", "Producto", FormMethod.Get))
+                {
+                    <!-- Dropdown de ordenar por precio -->
+                    <div class="d-flex justify-content-end">
+                        <div class="me-3 mt-4">
+                            <div class="nav-item dropdown">
+                                <select id="sortPrice" name="sortOrder" class="form-select" onchange="this.form.submit()">
+                                    <option value="nothing">Ordenar por</option>
+                                    <option value="price_asc">Precio menor</option>
+                                    <option value="price_desc">Precio mayor</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+
+        <!-- Productos -->
+        <div class="untree_co-section product-section before-footer-section">
+            <div class="container">
+                <div class="row" id="searchResults">
+                    @foreach (var item in Model)
+                    {
+                        <div class="col-12 col-md-4 col-lg-3">
+                            <div class="shadow-sm mt-4">
+                                <a class="product-item" href="@Url.Action("Details", "Producto", new { id = item.CodigoProducto })">
+                                    <img src="images/imgNotFound.png" class="img-fluid product-thumbnail" alt="Default Image">
+                                    <h3 class="product-title">@item.Nombre</h3>
+                                    <strong class="product-price">$@item.Precio</strong>
+                                </a>
+                                <div class="row justify-content-center">
+                                    <div class="col-auto text-center mt-2 mb-4">
+                                        <a href="@Url.Action("Edit", "Producto", new { id = item.CodigoProducto })" class="btn btn-success border-0 mt-4" style="background-color:#74c0fc; color: #fff;">
+                                            <i class="fa-solid fa-pen-to-square fa-xs"></i> Editar
+                                        </a>
+                                        <a href="@Url.Action("Delete", "Producto", new { id = item.CodigoProducto })" class="btn btn-success border-0 mt-4" style="background-color:#ec1313; color: #fff;">
+                                            <i class="fa-solid fa-trash fa-xs"></i> Eliminar
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+            checkbox.addEventListener('change', () => {
+                checkbox.form.submit();
+            });
+        });
+    </script>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/tiny-slider.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+</html>
