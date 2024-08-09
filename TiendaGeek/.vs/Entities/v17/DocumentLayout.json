@@ -3,32 +3,44 @@
   "WorkspaceRootPath": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3899A7CB-C7C8-4394-AB88-825EDB7D45E9}|Entities\\Entities.csproj|d:\\universidad\\progra\\proyecto\\tiendageek\\tiendageek\\entities\\entities\\tiendageekcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3899A7CB-C7C8-4394-AB88-825EDB7D45E9}|Entities\\Entities.csproj|solutionrelative:entities\\entities\\tiendageekcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ABB3089C-E7F2-4E10-A6C1-47DBF3664469}|FrontEnd\\FrontEnd.csproj|d:\\universidad\\progra\\proyecto\\tiendageek\\tiendageek\\frontend\\views\\historialpedidos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ABB3089C-E7F2-4E10-A6C1-47DBF3664469}|FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\views\\historialpedidos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2D03E8B3-2EB9-4C31-A734-48AD58B7EB8F}|BackEnd\\BackEnd.csproj|d:\\universidad\\progra\\proyecto\\tiendageek\\tiendageek\\backend\\services\\implemetations\\implhistorialpedidoservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2D03E8B3-2EB9-4C31-A734-48AD58B7EB8F}|BackEnd\\BackEnd.csproj|solutionrelative:backend\\services\\implemetations\\implhistorialpedidoservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ABB3089C-E7F2-4E10-A6C1-47DBF3664469}|FrontEnd\\FrontEnd.csproj|d:\\universidad\\progra\\proyecto\\tiendageek\\tiendageek\\frontend\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ABB3089C-E7F2-4E10-A6C1-47DBF3664469}|FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2D03E8B3-2EB9-4C31-A734-48AD58B7EB8F}|BackEnd\\BackEnd.csproj|d:\\universidad\\progra\\proyecto\\tiendageek\\tiendageek\\backend\\controllers\\historialpedidocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2D03E8B3-2EB9-4C31-A734-48AD58B7EB8F}|BackEnd\\BackEnd.csproj|solutionrelative:backend\\controllers\\historialpedidocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ABB3089C-E7F2-4E10-A6C1-47DBF3664469}|FrontEnd\\FrontEnd.csproj|d:\\universidad\\progra\\proyecto\\tiendageek\\tiendageek\\frontend\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ABB3089C-E7F2-4E10-A6C1-47DBF3664469}|FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2D03E8B3-2EB9-4C31-A734-48AD58B7EB8F}|BackEnd\\BackEnd.csproj|d:\\universidad\\progra\\proyecto\\tiendageek\\tiendageek\\backend\\services\\interfaces\\ihistorialpedidoservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2D03E8B3-2EB9-4C31-A734-48AD58B7EB8F}|BackEnd\\BackEnd.csproj|solutionrelative:backend\\services\\interfaces\\ihistorialpedidoservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ABB3089C-E7F2-4E10-A6C1-47DBF3664469}|FrontEnd\\FrontEnd.csproj|d:\\universidad\\progra\\proyecto\\tiendageek\\tiendageek\\frontend\\helpers\\implemetations\\imphistorialpedidohelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABB3089C-E7F2-4E10-A6C1-47DBF3664469}|FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\helpers\\implemetations\\imphistorialpedidohelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2D03E8B3-2EB9-4C31-A734-48AD58B7EB8F}|BackEnd\\BackEnd.csproj|d:\\universidad\\progra\\proyecto\\tiendageek\\tiendageek\\backend\\model\\historialpedidomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2D03E8B3-2EB9-4C31-A734-48AD58B7EB8F}|BackEnd\\BackEnd.csproj|solutionrelative:backend\\model\\historialpedidomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ABB3089C-E7F2-4E10-A6C1-47DBF3664469}|FrontEnd\\FrontEnd.csproj|d:\\universidad\\progra\\proyecto\\tiendageek\\tiendageek\\frontend\\helpers\\interfaces\\ihistorialpedidohelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABB3089C-E7F2-4E10-A6C1-47DBF3664469}|FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\helpers\\interfaces\\ihistorialpedidohelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3899A7CB-C7C8-4394-AB88-825EDB7D45E9}|Entities\\Entities.csproj|d:\\universidad\\progra\\proyecto\\tiendageek\\tiendageek\\entities\\entities\\historialpedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3899A7CB-C7C8-4394-AB88-825EDB7D45E9}|Entities\\Entities.csproj|solutionrelative:entities\\entities\\historialpedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ABB3089C-E7F2-4E10-A6C1-47DBF3664469}|FrontEnd\\FrontEnd.csproj|d:\\universidad\\progra\\proyecto\\tiendageek\\tiendageek\\frontend\\models\\historialpedidosviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABB3089C-E7F2-4E10-A6C1-47DBF3664469}|FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\models\\historialpedidosviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2D03E8B3-2EB9-4C31-A734-48AD58B7EB8F}|BackEnd\\BackEnd.csproj|d:\\universidad\\progra\\proyecto\\tiendageek\\tiendageek\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2D03E8B3-2EB9-4C31-A734-48AD58B7EB8F}|BackEnd\\BackEnd.csproj|solutionrelative:backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ABB3089C-E7F2-4E10-A6C1-47DBF3664469}|FrontEnd\\FrontEnd.csproj|d:\\universidad\\progra\\proyecto\\tiendageek\\tiendageek\\frontend\\apimodel\\historialpedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABB3089C-E7F2-4E10-A6C1-47DBF3664469}|FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\apimodel\\historialpedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABB3089C-E7F2-4E10-A6C1-47DBF3664469}|FrontEnd\\FrontEnd.csproj|d:\\universidad\\progra\\proyecto\\tiendageek\\tiendageek\\frontend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABB3089C-E7F2-4E10-A6C1-47DBF3664469}|FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABB3089C-E7F2-4E10-A6C1-47DBF3664469}|FrontEnd\\FrontEnd.csproj|d:\\universidad\\progra\\proyecto\\tiendageek\\tiendageek\\frontend\\controllers\\historialpedidoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABB3089C-E7F2-4E10-A6C1-47DBF3664469}|FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\controllers\\historialpedidoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABB3089C-E7F2-4E10-A6C1-47DBF3664469}|FrontEnd\\FrontEnd.csproj|d:\\universidad\\progra\\proyecto\\tiendageek\\tiendageek\\frontend\\models\\productoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABB3089C-E7F2-4E10-A6C1-47DBF3664469}|FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\models\\productoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,98 +50,156 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TiendaGeekContext.cs",
-              "DocumentMoniker": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\Entities\\Entities\\TiendaGeekContext.cs",
-              "RelativeDocumentMoniker": "Entities\\Entities\\TiendaGeekContext.cs",
-              "ToolTip": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\Entities\\Entities\\TiendaGeekContext.cs",
-              "RelativeToolTip": "Entities\\Entities\\TiendaGeekContext.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAA1wAAAAAAAAAAA",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\FrontEnd\\Program.cs",
+              "RelativeDocumentMoniker": "FrontEnd\\Program.cs",
+              "ToolTip": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\FrontEnd\\Program.cs",
+              "RelativeToolTip": "FrontEnd\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAABLAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-07T23:46:46.235Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-09T21:37:33.826Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\BackEnd\\Program.cs",
-              "RelativeDocumentMoniker": "BackEnd\\Program.cs",
-              "ToolTip": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\BackEnd\\Program.cs",
-              "RelativeToolTip": "BackEnd\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAABQAAAA",
+              "Title": "HistorialPedidos.cs",
+              "DocumentMoniker": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\FrontEnd\\ApiModel\\HistorialPedidos.cs",
+              "RelativeDocumentMoniker": "FrontEnd\\ApiModel\\HistorialPedidos.cs",
+              "ToolTip": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\FrontEnd\\ApiModel\\HistorialPedidos.cs",
+              "RelativeToolTip": "FrontEnd\\ApiModel\\HistorialPedidos.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-07T23:37:26.064Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "HistorialPedido.cs",
-              "DocumentMoniker": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\Entities\\Entities\\HistorialPedido.cs",
-              "RelativeDocumentMoniker": "Entities\\Entities\\HistorialPedido.cs",
-              "ToolTip": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\Entities\\Entities\\HistorialPedido.cs",
-              "RelativeToolTip": "Entities\\Entities\\HistorialPedido.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAcAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-07T23:12:43.895Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "HistorialPedidoController.cs",
-              "DocumentMoniker": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\BackEnd\\Controllers\\HistorialPedidoController.cs",
-              "RelativeDocumentMoniker": "BackEnd\\Controllers\\HistorialPedidoController.cs",
-              "ToolTip": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\BackEnd\\Controllers\\HistorialPedidoController.cs",
-              "RelativeToolTip": "BackEnd\\Controllers\\HistorialPedidoController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABUAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-07T23:11:04.652Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "HistorialPedidoModel.cs",
-              "DocumentMoniker": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\BackEnd\\Model\\HistorialPedidoModel.cs",
-              "RelativeDocumentMoniker": "BackEnd\\Model\\HistorialPedidoModel.cs",
-              "ToolTip": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\BackEnd\\Model\\HistorialPedidoModel.cs",
-              "RelativeToolTip": "BackEnd\\Model\\HistorialPedidoModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAgAAAA4AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-07T23:09:16.405Z",
+              "WhenOpened": "2024-08-09T21:25:19.619Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "IHistorialPedidoServices.cs",
-              "DocumentMoniker": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\BackEnd\\Services\\Interfaces\\IHistorialPedidoServices.cs",
-              "RelativeDocumentMoniker": "BackEnd\\Services\\Interfaces\\IHistorialPedidoServices.cs",
-              "ToolTip": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\BackEnd\\Services\\Interfaces\\IHistorialPedidoServices.cs",
-              "RelativeToolTip": "BackEnd\\Services\\Interfaces\\IHistorialPedidoServices.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAcAAAAoAAAA",
+              "Title": "ImpHistorialPedidoHelper.cs",
+              "DocumentMoniker": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\FrontEnd\\Helpers\\Implemetations\\ImpHistorialPedidoHelper.cs",
+              "RelativeDocumentMoniker": "FrontEnd\\Helpers\\Implemetations\\ImpHistorialPedidoHelper.cs",
+              "ToolTip": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\FrontEnd\\Helpers\\Implemetations\\ImpHistorialPedidoHelper.cs",
+              "RelativeToolTip": "FrontEnd\\Helpers\\Implemetations\\ImpHistorialPedidoHelper.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAuwBEAAABdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-07T23:08:30.532Z",
+              "WhenOpened": "2024-08-09T21:17:04.02Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IHistorialPedidoHelper.cs",
+              "DocumentMoniker": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\FrontEnd\\Helpers\\Interfaces\\IHistorialPedidoHelper.cs",
+              "RelativeDocumentMoniker": "FrontEnd\\Helpers\\Interfaces\\IHistorialPedidoHelper.cs",
+              "ToolTip": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\FrontEnd\\Helpers\\Interfaces\\IHistorialPedidoHelper.cs",
+              "RelativeToolTip": "FrontEnd\\Helpers\\Interfaces\\IHistorialPedidoHelper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-09T21:15:48.966Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HistorialPedidosViewModel.cs",
+              "DocumentMoniker": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\FrontEnd\\Models\\HistorialPedidosViewModel.cs",
+              "RelativeDocumentMoniker": "FrontEnd\\Models\\HistorialPedidosViewModel.cs",
+              "ToolTip": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\FrontEnd\\Models\\HistorialPedidosViewModel.cs",
+              "RelativeToolTip": "FrontEnd\\Models\\HistorialPedidosViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-09T21:08:57.432Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\FrontEnd\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "FrontEnd\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\FrontEnd\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "FrontEnd\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAJYAAAAAAAAAAAAAALEAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-09T20:50:55.727Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ImplHistorialPedidoServices.cs",
-              "DocumentMoniker": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\BackEnd\\Services\\Implemetations\\ImplHistorialPedidoServices.cs",
-              "RelativeDocumentMoniker": "BackEnd\\Services\\Implemetations\\ImplHistorialPedidoServices.cs",
-              "ToolTip": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\BackEnd\\Services\\Implemetations\\ImplHistorialPedidoServices.cs",
-              "RelativeToolTip": "BackEnd\\Services\\Implemetations\\ImplHistorialPedidoServices.cs",
-              "ViewState": "AQIAACQAAAAAAAAAAAA7wD8AAAA5AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-07T23:07:53.769Z",
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\FrontEnd\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "FrontEnd\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\FrontEnd\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "FrontEnd\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAADAAAAAAAAAAAAAAAB0AAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-09T20:41:08.809Z",
               "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "46d42573-ba81-4ba2-9501-1c484058519c",
+        "Display": 1,
+        "X": 1,
+        "Y": 1,
+        "Width": 1918,
+        "Height": 1030,
+        "WindowState": 2
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\FrontEnd\\Views\\HistorialPedidos\\Index.cshtml",
+              "RelativeDocumentMoniker": "FrontEnd\\Views\\HistorialPedidos\\Index.cshtml",
+              "ToolTip": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\FrontEnd\\Views\\HistorialPedidos\\Index.cshtml",
+              "RelativeToolTip": "FrontEnd\\Views\\HistorialPedidos\\Index.cshtml",
+              "ViewState": "AQIAADYAAAAAAAAAAAAAAEUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-09T21:12:10.322Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "HistorialPedidosController.cs",
+              "DocumentMoniker": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\FrontEnd\\Controllers\\HistorialPedidosController.cs",
+              "RelativeDocumentMoniker": "FrontEnd\\Controllers\\HistorialPedidosController.cs",
+              "ToolTip": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\FrontEnd\\Controllers\\HistorialPedidosController.cs",
+              "RelativeToolTip": "FrontEnd\\Controllers\\HistorialPedidosController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwBIAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-09T20:42:35.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ProductoViewModel.cs",
+              "DocumentMoniker": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\FrontEnd\\Models\\ProductoViewModel.cs",
+              "RelativeDocumentMoniker": "FrontEnd\\Models\\ProductoViewModel.cs",
+              "ToolTip": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\FrontEnd\\Models\\ProductoViewModel.cs",
+              "RelativeToolTip": "FrontEnd\\Models\\ProductoViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-09T20:59:30.268Z"
             }
           ]
         }

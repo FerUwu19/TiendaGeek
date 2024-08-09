@@ -12,6 +12,7 @@ builder.Services.AddHttpClient<IServiceRepository, ServiceRepository>();
 builder.Services.AddScoped<IServiceRepository, ServiceRepository>();
 builder.Services.AddScoped<IProductoHelper, ProductoHelper>();
 builder.Services.AddScoped<ICategoriumHelper, CategoriumHelper>();
+builder.Services.AddScoped<IHistorialPedidoHelper, ImpHistorialPedidoHelper>();
 #endregion
 
 
