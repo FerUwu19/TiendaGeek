@@ -32,6 +32,9 @@ builder.Services.AddScoped<IHistorialPedidoDAL, ImplHistorialPedidoDAL>();
 builder.Services.AddScoped<IHistorialPedidoServices, ImplHistorialPedidoServices>();
 
 builder.Services.AddScoped<IUnidadDeTrabajo, UnidadDeTrabajo>();
+
+builder.Services.AddScoped<ICarritoDAL, ImplCarritoDAL>();
+builder.Services.AddScoped<ICarritoService, ImplCarritoService>();
 #endregion
 
 var app = builder.Build();

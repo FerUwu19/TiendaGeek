@@ -3,44 +3,36 @@
   "WorkspaceRootPath": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ABB3089C-E7F2-4E10-A6C1-47DBF3664469}|FrontEnd\\FrontEnd.csproj|d:\\universidad\\progra\\proyecto\\tiendageek\\tiendageek\\frontend\\views\\historialpedidos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{ABB3089C-E7F2-4E10-A6C1-47DBF3664469}|FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\views\\historialpedidos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{2D03E8B3-2EB9-4C31-A734-48AD58B7EB8F}|BackEnd\\BackEnd.csproj|d:\\universidad\\progra\\proyecto\\tiendageek\\tiendageek\\backend\\controllers\\carritocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D03E8B3-2EB9-4C31-A734-48AD58B7EB8F}|BackEnd\\BackEnd.csproj|solutionrelative:backend\\controllers\\carritocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ABB3089C-E7F2-4E10-A6C1-47DBF3664469}|FrontEnd\\FrontEnd.csproj|d:\\universidad\\progra\\proyecto\\tiendageek\\tiendageek\\frontend\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{ABB3089C-E7F2-4E10-A6C1-47DBF3664469}|FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{2D03E8B3-2EB9-4C31-A734-48AD58B7EB8F}|BackEnd\\BackEnd.csproj|d:\\universidad\\progra\\proyecto\\tiendageek\\tiendageek\\backend\\model\\carritomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D03E8B3-2EB9-4C31-A734-48AD58B7EB8F}|BackEnd\\BackEnd.csproj|solutionrelative:backend\\model\\carritomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ABB3089C-E7F2-4E10-A6C1-47DBF3664469}|FrontEnd\\FrontEnd.csproj|d:\\universidad\\progra\\proyecto\\tiendageek\\tiendageek\\frontend\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{ABB3089C-E7F2-4E10-A6C1-47DBF3664469}|FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{3899A7CB-C7C8-4394-AB88-825EDB7D45E9}|Entities\\Entities.csproj|d:\\universidad\\progra\\proyecto\\tiendageek\\tiendageek\\entities\\entities\\carrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3899A7CB-C7C8-4394-AB88-825EDB7D45E9}|Entities\\Entities.csproj|solutionrelative:entities\\entities\\carrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ABB3089C-E7F2-4E10-A6C1-47DBF3664469}|FrontEnd\\FrontEnd.csproj|d:\\universidad\\progra\\proyecto\\tiendageek\\tiendageek\\frontend\\helpers\\implemetations\\imphistorialpedidohelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABB3089C-E7F2-4E10-A6C1-47DBF3664469}|FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\helpers\\implemetations\\imphistorialpedidohelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2D03E8B3-2EB9-4C31-A734-48AD58B7EB8F}|BackEnd\\BackEnd.csproj|d:\\universidad\\progra\\proyecto\\tiendageek\\tiendageek\\backend\\services\\interfaces\\icarritoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D03E8B3-2EB9-4C31-A734-48AD58B7EB8F}|BackEnd\\BackEnd.csproj|solutionrelative:backend\\services\\interfaces\\icarritoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ABB3089C-E7F2-4E10-A6C1-47DBF3664469}|FrontEnd\\FrontEnd.csproj|d:\\universidad\\progra\\proyecto\\tiendageek\\tiendageek\\frontend\\helpers\\interfaces\\ihistorialpedidohelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABB3089C-E7F2-4E10-A6C1-47DBF3664469}|FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\helpers\\interfaces\\ihistorialpedidohelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2D03E8B3-2EB9-4C31-A734-48AD58B7EB8F}|BackEnd\\BackEnd.csproj|d:\\universidad\\progra\\proyecto\\tiendageek\\tiendageek\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D03E8B3-2EB9-4C31-A734-48AD58B7EB8F}|BackEnd\\BackEnd.csproj|solutionrelative:backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ABB3089C-E7F2-4E10-A6C1-47DBF3664469}|FrontEnd\\FrontEnd.csproj|d:\\universidad\\progra\\proyecto\\tiendageek\\tiendageek\\frontend\\models\\historialpedidosviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABB3089C-E7F2-4E10-A6C1-47DBF3664469}|FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\models\\historialpedidosviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2D03E8B3-2EB9-4C31-A734-48AD58B7EB8F}|BackEnd\\BackEnd.csproj|d:\\universidad\\progra\\proyecto\\tiendageek\\tiendageek\\backend\\services\\implemetations\\implcarritoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D03E8B3-2EB9-4C31-A734-48AD58B7EB8F}|BackEnd\\BackEnd.csproj|solutionrelative:backend\\services\\implemetations\\implcarritoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ABB3089C-E7F2-4E10-A6C1-47DBF3664469}|FrontEnd\\FrontEnd.csproj|d:\\universidad\\progra\\proyecto\\tiendageek\\tiendageek\\frontend\\apimodel\\historialpedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABB3089C-E7F2-4E10-A6C1-47DBF3664469}|FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\apimodel\\historialpedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0F438A59-2ABD-4F24-B1D3-B849AA090703}|DAL\\DAL.csproj|d:\\universidad\\progra\\proyecto\\tiendageek\\tiendageek\\dal\\interfaces\\icarritodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F438A59-2ABD-4F24-B1D3-B849AA090703}|DAL\\DAL.csproj|solutionrelative:dal\\interfaces\\icarritodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ABB3089C-E7F2-4E10-A6C1-47DBF3664469}|FrontEnd\\FrontEnd.csproj|d:\\universidad\\progra\\proyecto\\tiendageek\\tiendageek\\frontend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABB3089C-E7F2-4E10-A6C1-47DBF3664469}|FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABB3089C-E7F2-4E10-A6C1-47DBF3664469}|FrontEnd\\FrontEnd.csproj|d:\\universidad\\progra\\proyecto\\tiendageek\\tiendageek\\frontend\\controllers\\historialpedidoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABB3089C-E7F2-4E10-A6C1-47DBF3664469}|FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\controllers\\historialpedidoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABB3089C-E7F2-4E10-A6C1-47DBF3664469}|FrontEnd\\FrontEnd.csproj|d:\\universidad\\progra\\proyecto\\tiendageek\\tiendageek\\frontend\\models\\productoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABB3089C-E7F2-4E10-A6C1-47DBF3664469}|FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\models\\productoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0F438A59-2ABD-4F24-B1D3-B849AA090703}|DAL\\DAL.csproj|d:\\universidad\\progra\\proyecto\\tiendageek\\tiendageek\\dal\\impletations\\implcarritodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F438A59-2ABD-4F24-B1D3-B849AA090703}|DAL\\DAL.csproj|solutionrelative:dal\\impletations\\implcarritodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,156 +42,113 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\FrontEnd\\Program.cs",
-              "RelativeDocumentMoniker": "FrontEnd\\Program.cs",
-              "ToolTip": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\FrontEnd\\Program.cs",
-              "RelativeToolTip": "FrontEnd\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAABLAAAA",
+              "Title": "ImplCarritoDAL.cs",
+              "DocumentMoniker": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\DAL\\Impletations\\ImplCarritoDAL.cs",
+              "RelativeDocumentMoniker": "DAL\\Impletations\\ImplCarritoDAL.cs",
+              "ToolTip": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\DAL\\Impletations\\ImplCarritoDAL.cs",
+              "RelativeToolTip": "DAL\\Impletations\\ImplCarritoDAL.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAQwCkAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-09T21:37:33.826Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "HistorialPedidos.cs",
-              "DocumentMoniker": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\FrontEnd\\ApiModel\\HistorialPedidos.cs",
-              "RelativeDocumentMoniker": "FrontEnd\\ApiModel\\HistorialPedidos.cs",
-              "ToolTip": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\FrontEnd\\ApiModel\\HistorialPedidos.cs",
-              "RelativeToolTip": "FrontEnd\\ApiModel\\HistorialPedidos.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-09T21:25:19.619Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ImpHistorialPedidoHelper.cs",
-              "DocumentMoniker": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\FrontEnd\\Helpers\\Implemetations\\ImpHistorialPedidoHelper.cs",
-              "RelativeDocumentMoniker": "FrontEnd\\Helpers\\Implemetations\\ImpHistorialPedidoHelper.cs",
-              "ToolTip": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\FrontEnd\\Helpers\\Implemetations\\ImpHistorialPedidoHelper.cs",
-              "RelativeToolTip": "FrontEnd\\Helpers\\Implemetations\\ImpHistorialPedidoHelper.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAuwBEAAABdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-09T21:17:04.02Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IHistorialPedidoHelper.cs",
-              "DocumentMoniker": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\FrontEnd\\Helpers\\Interfaces\\IHistorialPedidoHelper.cs",
-              "RelativeDocumentMoniker": "FrontEnd\\Helpers\\Interfaces\\IHistorialPedidoHelper.cs",
-              "ToolTip": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\FrontEnd\\Helpers\\Interfaces\\IHistorialPedidoHelper.cs",
-              "RelativeToolTip": "FrontEnd\\Helpers\\Interfaces\\IHistorialPedidoHelper.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA+AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-09T21:15:48.966Z",
+              "WhenOpened": "2024-08-13T01:45:15.542Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "HistorialPedidosViewModel.cs",
-              "DocumentMoniker": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\FrontEnd\\Models\\HistorialPedidosViewModel.cs",
-              "RelativeDocumentMoniker": "FrontEnd\\Models\\HistorialPedidosViewModel.cs",
-              "ToolTip": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\FrontEnd\\Models\\HistorialPedidosViewModel.cs",
-              "RelativeToolTip": "FrontEnd\\Models\\HistorialPedidosViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAIAAAA",
+              "Title": "ImplCarritoService.cs",
+              "DocumentMoniker": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\BackEnd\\Services\\Implemetations\\ImplCarritoService.cs",
+              "RelativeDocumentMoniker": "BackEnd\\Services\\Implemetations\\ImplCarritoService.cs",
+              "ToolTip": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\BackEnd\\Services\\Implemetations\\ImplCarritoService.cs",
+              "RelativeToolTip": "BackEnd\\Services\\Implemetations\\ImplCarritoService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-09T21:08:57.432Z",
+              "WhenOpened": "2024-08-13T01:54:03.126Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\FrontEnd\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "FrontEnd\\Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\FrontEnd\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "FrontEnd\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAJYAAAAAAAAAAAAAALEAAAAHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-09T20:50:55.727Z",
+              "Title": "Carrito.cs",
+              "DocumentMoniker": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\Entities\\Entities\\Carrito.cs",
+              "RelativeDocumentMoniker": "Entities\\Entities\\Carrito.cs",
+              "ToolTip": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\Entities\\Entities\\Carrito.cs",
+              "RelativeToolTip": "Entities\\Entities\\Carrito.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T02:45:02.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\BackEnd\\Program.cs",
+              "RelativeDocumentMoniker": "BackEnd\\Program.cs",
+              "ToolTip": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\BackEnd\\Program.cs",
+              "RelativeToolTip": "BackEnd\\Program.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACQAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T02:42:07.969Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CarritoController.cs",
+              "DocumentMoniker": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\BackEnd\\Controllers\\CarritoController.cs",
+              "RelativeDocumentMoniker": "BackEnd\\Controllers\\CarritoController.cs",
+              "ToolTip": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\BackEnd\\Controllers\\CarritoController.cs",
+              "RelativeToolTip": "BackEnd\\Controllers\\CarritoController.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAYwDQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T02:24:15.987Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ICarritoService.cs",
+              "DocumentMoniker": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\BackEnd\\Services\\Interfaces\\ICarritoService.cs",
+              "RelativeDocumentMoniker": "BackEnd\\Services\\Interfaces\\ICarritoService.cs",
+              "ToolTip": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\BackEnd\\Services\\Interfaces\\ICarritoService.cs",
+              "RelativeToolTip": "BackEnd\\Services\\Interfaces\\ICarritoService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAcAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T02:21:31.632Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ICarritoDAL.cs",
+              "DocumentMoniker": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\DAL\\Interfaces\\ICarritoDAL.cs",
+              "RelativeDocumentMoniker": "DAL\\Interfaces\\ICarritoDAL.cs",
+              "ToolTip": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\DAL\\Interfaces\\ICarritoDAL.cs",
+              "RelativeToolTip": "DAL\\Interfaces\\ICarritoDAL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T02:13:54.824Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\FrontEnd\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "FrontEnd\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\FrontEnd\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "FrontEnd\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAADAAAAAAAAAAAAAAAB0AAABMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-09T20:41:08.809Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "46d42573-ba81-4ba2-9501-1c484058519c",
-        "Display": 1,
-        "X": 1,
-        "Y": 1,
-        "Width": 1918,
-        "Height": 1030,
-        "WindowState": 2
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\FrontEnd\\Views\\HistorialPedidos\\Index.cshtml",
-              "RelativeDocumentMoniker": "FrontEnd\\Views\\HistorialPedidos\\Index.cshtml",
-              "ToolTip": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\FrontEnd\\Views\\HistorialPedidos\\Index.cshtml",
-              "RelativeToolTip": "FrontEnd\\Views\\HistorialPedidos\\Index.cshtml",
-              "ViewState": "AQIAADYAAAAAAAAAAAAAAEUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-09T21:12:10.322Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "HistorialPedidosController.cs",
-              "DocumentMoniker": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\FrontEnd\\Controllers\\HistorialPedidosController.cs",
-              "RelativeDocumentMoniker": "FrontEnd\\Controllers\\HistorialPedidosController.cs",
-              "ToolTip": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\FrontEnd\\Controllers\\HistorialPedidosController.cs",
-              "RelativeToolTip": "FrontEnd\\Controllers\\HistorialPedidosController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwBIAAABDAAAA",
+              "Title": "CarritoModel.cs",
+              "DocumentMoniker": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\BackEnd\\Model\\CarritoModel.cs",
+              "RelativeDocumentMoniker": "BackEnd\\Model\\CarritoModel.cs",
+              "ToolTip": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\BackEnd\\Model\\CarritoModel.cs",
+              "RelativeToolTip": "BackEnd\\Model\\CarritoModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-09T20:42:35.121Z",
+              "WhenOpened": "2024-08-13T01:58:47.669Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ProductoViewModel.cs",
-              "DocumentMoniker": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\FrontEnd\\Models\\ProductoViewModel.cs",
-              "RelativeDocumentMoniker": "FrontEnd\\Models\\ProductoViewModel.cs",
-              "ToolTip": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\FrontEnd\\Models\\ProductoViewModel.cs",
-              "RelativeToolTip": "FrontEnd\\Models\\ProductoViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-09T20:59:30.268Z"
             }
           ]
         }
