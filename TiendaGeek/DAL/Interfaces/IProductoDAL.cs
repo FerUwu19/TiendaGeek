@@ -9,6 +9,6 @@ namespace DAL.Interfaces
 {
     public interface IProductoDAL : IDALGenerico<Producto>
     {
-        IEnumerable<Producto> GetByCategories(List<int> categoryIds);
+
     }
 }

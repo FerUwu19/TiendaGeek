@@ -7,29 +7,29 @@ namespace FrontEnd.Controllers
 {
     public class ProductoController : Controller
     {
-
-        IProductoHelper ProductoHelper;
-        ICategoriumHelper CategoriumHelper;
+        private readonly IProductoHelper ProductoHelper;
+        private readonly ICategoriumHelper CategoriumHelper;
 
         public ProductoController(IProductoHelper productoHelper, ICategoriumHelper categoriumHelper)
         {
             this.ProductoHelper = productoHelper;
             this.CategoriumHelper = categoriumHelper;
-
         }
 
-        public ActionResult Index(string sortOrder, List<int> categorias)
+        public ActionResult Index(string sortOrder, int? categoria)
         {
             List<ProductoViewModel> listaProductos;
 
-            if (categorias != null && categorias.Any())
+            if (categoria.HasValue && categoria.Value > 0)
             {
                 // Llamar al backend para obtener productos filtrados por categoría
-                listaProductos = ProductoHelper.GetProductosByCategories(categorias);
+                listaProductos = ProductoHelper.GetProductosByCategory(categoria.Value);
+                ViewBag.CurrentCategoria = categoria.Value; // Guardar la categoría seleccionada
             }
             else
             {
                 listaProductos = ProductoHelper.GetProductos();
+                ViewBag.CurrentCategoria = null; // No hay categoría seleccionada
             }
 
             // Ordenar por precio
@@ -46,10 +46,10 @@ namespace FrontEnd.Controllers
                     break;
             }
 
-            var todasCategorias = CategoriumHelper.GetCategorias();
             ViewBag.CurrentSortOrder = sortOrder;
-            ViewBag.CurrentCategories = categorias;
-            ViewBag.CategoriasDisponibles = todasCategorias;
+
+            // Cargar la lista de categorías disponibles para el dropdown en la vista
+            ViewBag.CategoriasDisponibles = CategoriumHelper.GetCategorias();
 
             return View(listaProductos);
         }
@@ -67,7 +67,7 @@ namespace FrontEnd.Controllers
         {
             ProductoViewModel producto = new ProductoViewModel();
             producto.Categorias = CategoriumHelper.GetCategorias();
-            return View();
+            return View(producto);
         }
 
         // POST: ProductoController/Create
@@ -75,21 +75,30 @@ namespace FrontEnd.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create(ProductoViewModel producto)
         {
-            try
+            if (ModelState.IsValid)
             {
-                _ = ProductoHelper.Add(producto);
-                return RedirectToAction(nameof(Index));
+                try
+                {
+                    ProductoHelper.Add(producto);
+                    return RedirectToAction(nameof(Index));
+                }
+                catch (Exception ex)
+                {
+                    ModelState.AddModelError("", $"Error al crear el producto: {ex.Message}");
+                }
             }
-            catch
-            {
-                return View();
-            }
+            producto.Categorias = CategoriumHelper.GetCategorias();
+            return View(producto);
         }
 
         // GET: ProductoController/Edit/5
         public ActionResult Edit(int id)
         {
             ProductoViewModel producto = ProductoHelper.GetProducto(id);
+            if (producto == null)
+            {
+                return NotFound();
+            }
             producto.Categorias = CategoriumHelper.GetCategorias();
             return View(producto);
         }
@@ -99,39 +108,48 @@ namespace FrontEnd.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Edit(ProductoViewModel producto)
         {
-            try
+            if (ModelState.IsValid)
             {
-                _ = ProductoHelper.Update(producto);
-                return RedirectToAction(nameof(Index));
+                try
+                {
+                    ProductoHelper.Update(producto);
+                    return RedirectToAction(nameof(Index));
+                }
+                catch (Exception ex)
+                {
+                    ModelState.AddModelError("", $"Error al editar el producto: {ex.Message}");
+                }
             }
-            catch
-            {
-                return View();
-            }
+            producto.Categorias = CategoriumHelper.GetCategorias();
+            return View(producto);
         }
 
         // GET: ProductoController/Delete/5
         public ActionResult Delete(int id)
         {
             ProductoViewModel producto = ProductoHelper.GetProducto(id);
+            if (producto == null)
+            {
+                return NotFound();
+            }
             return View(producto);
         }
 
         // POST: ProductoController/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(ProductoViewModel producto)
+        public ActionResult Delete(int id, ProductoViewModel producto)
         {
             try
             {
-                _ = ProductoHelper.Remove(producto.CodigoProducto);
-
+                ProductoHelper.Remove(id);
                 return RedirectToAction(nameof(Index));
             }
-            catch
+            catch (Exception ex)
             {
-                return View();
+                ModelState.AddModelError("", $"Error al eliminar el producto: {ex.Message}");
             }
+            return View(producto);
         }
     }
 }

@@ -11,6 +11,7 @@ namespace FrontEnd.Helpers.Interfaces
         ProductoViewModel Remove(int id);
 
         // Método para filtrar productos por categorías
-        List<ProductoViewModel> GetProductosByCategories(List<int> categoryIds);
+        List<ProductoViewModel> GetProductosByCategory(int categoryId);
+
     }
 }

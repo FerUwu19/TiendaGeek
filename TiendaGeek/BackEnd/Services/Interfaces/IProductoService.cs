@@ -14,6 +14,5 @@ namespace BackEnd.Services.Interfaces
 
         //método para filtrar por categoría
         IEnumerable<ProductoModel> GetByCategory(int categoryId);
-        IEnumerable<ProductoModel> GetByCategories(List<int> categoryIds);
     }
 }

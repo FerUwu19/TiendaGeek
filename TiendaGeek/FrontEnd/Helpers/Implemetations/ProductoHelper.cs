@@ -114,9 +114,10 @@ namespace FrontEnd.Helpers.Implemetations
             return producto;
         }
 
-        public List<ProductoViewModel> GetProductosByCategories(List<int> categoryIds)
+        //metodo para filtrar productos por categoria 
+        public List<ProductoViewModel> GetProductosByCategory(int categoryId)
         {
-            HttpResponseMessage response = ServiceRepository.PostResponse("api/Producto/ByCategory", categoryIds);
+            HttpResponseMessage response = ServiceRepository.GetResponse($"api/Producto/ByCategory/{categoryId}");
             List<Producto> resultado = new List<Producto>();
 
             if (response != null)
@@ -132,7 +133,7 @@ namespace FrontEnd.Helpers.Implemetations
                 productos.Add(Convertir(item));
             }
 
-            return productos;
+            return productos; 
         }
 
     }

@@ -91,10 +91,5 @@ namespace BackEnd.Services.Implemetations
             return productos.Select(p => Convertir(p)).ToList();
         }
 
-        public IEnumerable<ProductoModel> GetByCategories(List<int> categoryIds)
-        {
-            var productos = ProductoDAL.GetByCategories(categoryIds);
-            return productos.Select(p => Convertir(p)).ToList();
-        }
     }
 }

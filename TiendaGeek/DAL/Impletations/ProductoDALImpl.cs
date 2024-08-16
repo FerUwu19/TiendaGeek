@@ -19,9 +19,5 @@ namespace DAL.Impletations
             this._tiendaContext = tiendaContext;
         }
 
-        public IEnumerable<Producto> GetByCategories(List<int> categoryIds)
-        {
-            return _tiendaContext.Set<Producto>().Where(p => p.CodigoCategoria.HasValue && categoryIds.Contains(p.CodigoCategoria.Value)).ToList();
-        }
     }
 }

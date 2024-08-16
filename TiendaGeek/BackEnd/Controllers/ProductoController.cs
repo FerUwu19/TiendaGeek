@@ -9,69 +9,125 @@ namespace BackEnd.Controllers
     [ApiController]
     public class ProductoController : ControllerBase
     {
-
-        private IProductoService _productoService;
-
+        private readonly IProductoService _productoService;
 
         public ProductoController(IProductoService productoService)
         {
-            this._productoService = productoService;
+            _productoService = productoService;
         }
 
-        // GET: api/<ProductoController>
+        // GET: api/Producto
         [HttpGet]
-        public IEnumerable<ProductoModel> Get()
+        public ActionResult<IEnumerable<ProductoModel>> Get()
         {
-            return _productoService.Get();
+            try
+            {
+                var productos = _productoService.Get();
+                return Ok(productos);
+            }
+            catch (Exception ex)
+            {
+                // Log the exception (ex)
+                return StatusCode(StatusCodes.Status500InternalServerError, "Error al obtener los datos del servidor.");
+            }
         }
 
-        // GET api/<ProductoController>/5
+        // GET api/Producto/5
         [HttpGet("{id}")]
-        public ProductoModel Get(int id)
+        public ActionResult<ProductoModel> Get(int id)
         {
-            return _productoService.Get(id);
+            try
+            {
+                var producto = _productoService.Get(id);
+                if (producto == null)
+                {
+                    return NotFound();
+                }
+                return Ok(producto);
+            }
+            catch (Exception ex)
+            {
+                // Log the exception (ex)
+                return StatusCode(StatusCodes.Status500InternalServerError, "Error al obtener los datos del servidor.");
+            }
         }
 
-        // POST api/<ProductoController>
+        // POST api/Producto
         [HttpPost]
-        public ProductoModel Post([FromBody] ProductoModel producto)
+        public ActionResult<ProductoModel> Post([FromBody] ProductoModel producto)
         {
-            _productoService.Add(producto);
-            return producto;
-
+            try
+            {
+                _productoService.Add(producto);
+                return CreatedAtAction(nameof(Get), new { id = producto.CodigoProducto }, producto);
+            }
+            catch (Exception ex)
+            {
+                // Log the exception (ex)
+                return StatusCode(StatusCodes.Status500InternalServerError, "Error al crear un nuevo registro.");
+            }
         }
 
-        // PUT api/<ProductoController>/5
+        // PUT api/Producto/5
         [HttpPut]
-        public ProductoModel Put([FromBody] ProductoModel producto)
+        public ActionResult<ProductoModel> Put([FromBody] ProductoModel producto)
         {
-            _productoService.Update(producto);
-            return producto;
+            try
+            {
+                var existingProduct = _productoService.Get(producto.CodigoProducto);
+                if (existingProduct == null)
+                {
+                    return NotFound();
+                }
+                _productoService.Update(producto);
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                // Log the exception (ex)
+                return StatusCode(StatusCodes.Status500InternalServerError, "Error al actualizar el registro.");
+            }
         }
 
-        // DELETE api/<ProductoController>/5
+        // DELETE api/Producto/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public ActionResult Delete(int id)
         {
-            ProductoModel producto = new ProductoModel { CodigoProducto = id };
-            _productoService.Remove(producto);
-
+            try
+            {
+                var producto = _productoService.Get(id);
+                if (producto == null)
+                {
+                    return NotFound();
+                }
+                _productoService.Remove(producto);
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                // Log the exception (ex)
+                return StatusCode(StatusCodes.Status500InternalServerError, "Error al eliminar el registro.");
+            }
         }
 
-        //para el filtro de categoria
+        // GET api/Producto/ByCategory/5
         [HttpGet("ByCategory/{categoryId}")]
-        public IEnumerable<ProductoModel> GetByCategory(int categoryId)
+        public ActionResult<IEnumerable<ProductoModel>> GetByCategory(int categoryId)
         {
-            return _productoService.GetByCategory(categoryId);
+            try
+            {
+                var productos = _productoService.GetByCategory(categoryId);
+                if (!productos.Any())
+                {
+                    return NotFound("No se encontraron productos para la categoría especificada.");
+                }
+                return Ok(productos);
+            }
+            catch (Exception ex)
+            {
+                // Log the exception (ex)
+                return StatusCode(StatusCodes.Status500InternalServerError, "Error al obtener los datos del servidor.");
+            }
         }
-        
-        // Para el filtro de categoría con método POST
-        [HttpPost("ByCategory")]
-        public IEnumerable<ProductoModel> GetByCategory([FromBody] List<int> categoryIds)
-        {
-            return _productoService.GetByCategories(categoryIds);
-        }
-
-
     }
 }

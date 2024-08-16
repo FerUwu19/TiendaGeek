@@ -39,10 +39,7 @@
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 <div class="form-group">
                     <label asp-for="CodigoCategoria" class="control-label"></label>
-                    @*
                     @Html.DropDownListFor(model => model.CodigoCategoria, new SelectList(Model.Categorias, "CodigoCategoria", "Nombre"), "Seleccione la categoría")
-                    *@
-                    <input asp-for="CodigoCategoria" class="form-control" />
                     <span asp-validation-for="CodigoCategoria" class="text-danger"></span>
                 </div>
                 <div class="form-group">
