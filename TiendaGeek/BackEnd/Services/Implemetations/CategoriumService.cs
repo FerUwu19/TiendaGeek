@@ -4,7 +4,7 @@ using DAL.Implementations;
 using DAL.Interfaces;
 using Entities.Entities;
 
-namespace BackEnd.Services.Implementations
+namespace BackEnd.Services.Implemetations
 {
     public class CategoriumService : ICategoriumService
     {

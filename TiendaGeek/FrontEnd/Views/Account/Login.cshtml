@@ -1,0 +1,45 @@
+﻿@model FrontEnd.Models.UserViewModel
+
+@{
+    ViewData["Title"] = "Login";
+    Layout = "_Layout"; // Cambiar el layout a "_Layout" como en ProductoViewModel
+}
+
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" asp-append-version="true" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            <h1 class="text-center" style="color:black; font-weight:600;">Login</h1>
+            <form asp-action="Login">
+                @Html.HiddenFor(Model => Model.ReturnUrl)
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <div class="form-group">
+                    <label asp-for="UserName" class="control-label"></label>
+                    <input asp-for="UserName" class="form-control" />
+                    <span asp-validation-for="UserName" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Password" class="control-label"></label>
+                    <input asp-for="Password" class="form-control" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+
+                <div class="d-flex mt-4 justify-content-center">
+                    <button type="submit" style="background-color: #007bff; border: 1px solid #007bff; color: white; padding: 0.5rem 1rem; font-size: 1rem; border-radius: 0.25rem;" onmouseover="this.style.backgroundColor='#0056b3'; this.style.borderColor='#004085';" onmouseout="this.style.backgroundColor='#007bff'; this.style.borderColor='#007bff';">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

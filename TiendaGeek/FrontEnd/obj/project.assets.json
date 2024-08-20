@@ -8104,19 +8104,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\daniela\\.nuget\\packages\\": {}
+    "C:\\Users\\Daniela\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\daniela\\Desktop\\TiendaGeek\\TiendaGeek\\FrontEnd\\FrontEnd.csproj",
+      "projectUniqueName": "C:\\Users\\Daniela\\source\\repos\\TiendaGeek\\TiendaGeek\\FrontEnd\\FrontEnd.csproj",
       "projectName": "FrontEnd",
-      "projectPath": "C:\\Users\\daniela\\Desktop\\TiendaGeek\\TiendaGeek\\FrontEnd\\FrontEnd.csproj",
-      "packagesPath": "C:\\Users\\daniela\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\daniela\\Desktop\\TiendaGeek\\TiendaGeek\\FrontEnd\\obj\\",
+      "projectPath": "C:\\Users\\Daniela\\source\\repos\\TiendaGeek\\TiendaGeek\\FrontEnd\\FrontEnd.csproj",
+      "packagesPath": "C:\\Users\\Daniela\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Daniela\\source\\repos\\TiendaGeek\\TiendaGeek\\FrontEnd\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\daniela\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Daniela\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8124,6 +8124,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -8197,7 +8198,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.304/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

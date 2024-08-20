@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Configuration;
 using FrontEnd.Helpers.Interfaces;
 
-namespace FrontEnd.Helpers.Implementations
+namespace FrontEnd.Helpers.Implemetations
 {
 
     public class ServiceRepository : IServiceRepository

@@ -5,7 +5,7 @@ using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.Net.Http;
 
-namespace FrontEnd.Helpers.Implementations
+namespace FrontEnd.Helpers.Implemetations
 {
     public class CategoriumHelper : ICategoriumHelper
     {

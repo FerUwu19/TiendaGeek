@@ -1,30 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\daniela\\Desktop\\TiendaGeek\\TiendaGeek\\",
+  "WorkspaceRootPath": "C:\\Users\\Daniela\\source\\repos\\TiendaGeek\\TiendaGeek\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\daniela\\Desktop\\TiendaGeek\\TiendaGeek\\Entities\\Migrations\\20240820013514_InitialAuth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Entities\\Migrations\\20240820013514_InitialAuth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2D03E8B3-2EB9-4C31-A734-48AD58B7EB8F}|BackEnd\\BackEnd.csproj|c:\\users\\daniela\\desktop\\tiendageek\\tiendageek\\backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{2D03E8B3-2EB9-4C31-A734-48AD58B7EB8F}|BackEnd\\BackEnd.csproj|solutionrelative:backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3899A7CB-C7C8-4394-AB88-825EDB7D45E9}|Entities\\Entities.csproj|c:\\users\\daniela\\desktop\\tiendageek\\tiendageek\\entities\\entities\\tiendageekcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3899A7CB-C7C8-4394-AB88-825EDB7D45E9}|Entities\\Entities.csproj|solutionrelative:entities\\entities\\tiendageekcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2D03E8B3-2EB9-4C31-A734-48AD58B7EB8F}|BackEnd\\BackEnd.csproj|c:\\users\\daniela\\desktop\\tiendageek\\tiendageek\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2D03E8B3-2EB9-4C31-A734-48AD58B7EB8F}|BackEnd\\BackEnd.csproj|solutionrelative:backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3899A7CB-C7C8-4394-AB88-825EDB7D45E9}|Entities\\Entities.csproj|c:\\users\\daniela\\desktop\\tiendageek\\tiendageek\\entities\\entities\\authdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3899A7CB-C7C8-4394-AB88-825EDB7D45E9}|Entities\\Entities.csproj|solutionrelative:entities\\entities\\authdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3899A7CB-C7C8-4394-AB88-825EDB7D45E9}|Entities\\Entities.csproj|c:\\users\\daniela\\desktop\\tiendageek\\tiendageek\\entities\\migrations\\tiendageekcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3899A7CB-C7C8-4394-AB88-825EDB7D45E9}|Entities\\Entities.csproj|solutionrelative:entities\\migrations\\tiendageekcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ABB3089C-E7F2-4E10-A6C1-47DBF3664469}|FrontEnd\\FrontEnd.csproj|c:\\users\\daniela\\source\\repos\\tiendageek\\tiendageek\\frontend\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ABB3089C-E7F2-4E10-A6C1-47DBF3664469}|FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,85 +14,72 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\daniela\\Desktop\\TiendaGeek\\TiendaGeek\\BackEnd\\appsettings.json",
-              "RelativeDocumentMoniker": "BackEnd\\appsettings.json",
-              "ToolTip": "C:\\Users\\daniela\\Desktop\\TiendaGeek\\TiendaGeek\\BackEnd\\appsettings.json",
-              "RelativeToolTip": "BackEnd\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-08-20T01:37:17.406Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:296:0:{dcc4ea97-1c0c-482b-b205-e541c0df9728}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:12:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:13:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "20240820013514_InitialAuth.cs",
-              "DocumentMoniker": "C:\\Users\\daniela\\Desktop\\TiendaGeek\\TiendaGeek\\Entities\\Migrations\\20240820013514_InitialAuth.cs",
-              "RelativeDocumentMoniker": "Entities\\Migrations\\20240820013514_InitialAuth.cs",
-              "ToolTip": "C:\\Users\\daniela\\Desktop\\TiendaGeek\\TiendaGeek\\Entities\\Migrations\\20240820013514_InitialAuth.cs",
-              "RelativeToolTip": "Entities\\Migrations\\20240820013514_InitialAuth.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T01:35:14.698Z",
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Daniela\\source\\repos\\TiendaGeek\\TiendaGeek\\FrontEnd\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "FrontEnd\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Daniela\\source\\repos\\TiendaGeek\\TiendaGeek\\FrontEnd\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "FrontEnd\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAhwBQAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-20T16:50:28.638Z",
               "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 151,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TiendaGeekContextModelSnapshot.cs",
-              "DocumentMoniker": "C:\\Users\\daniela\\Desktop\\TiendaGeek\\TiendaGeek\\Entities\\Migrations\\TiendaGeekContextModelSnapshot.cs",
-              "RelativeDocumentMoniker": "Entities\\Migrations\\TiendaGeekContextModelSnapshot.cs",
-              "ToolTip": "C:\\Users\\daniela\\Desktop\\TiendaGeek\\TiendaGeek\\Entities\\Migrations\\TiendaGeekContextModelSnapshot.cs",
-              "RelativeToolTip": "Entities\\Migrations\\TiendaGeekContextModelSnapshot.cs",
-              "ViewState": "AQIAAAMBAAAAAAAAAIBJwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T02:08:51.999Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TiendaGeekContext.cs",
-              "DocumentMoniker": "C:\\Users\\daniela\\Desktop\\TiendaGeek\\TiendaGeek\\Entities\\Entities\\TiendaGeekContext.cs",
-              "RelativeDocumentMoniker": "Entities\\Entities\\TiendaGeekContext.cs",
-              "ToolTip": "C:\\Users\\daniela\\Desktop\\TiendaGeek\\TiendaGeek\\Entities\\Entities\\TiendaGeekContext.cs",
-              "RelativeToolTip": "Entities\\Entities\\TiendaGeekContext.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAmwCEAAABCAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T02:02:32.979Z",
-              "EditorCaption": ""
-            },
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AuthDBContext.cs",
-              "DocumentMoniker": "C:\\Users\\daniela\\Desktop\\TiendaGeek\\TiendaGeek\\Entities\\Entities\\AuthDBContext.cs",
-              "RelativeDocumentMoniker": "Entities\\Entities\\AuthDBContext.cs",
-              "ToolTip": "C:\\Users\\daniela\\Desktop\\TiendaGeek\\TiendaGeek\\Entities\\Entities\\AuthDBContext.cs",
-              "RelativeToolTip": "Entities\\Entities\\AuthDBContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T02:02:09.912Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\daniela\\Desktop\\TiendaGeek\\TiendaGeek\\BackEnd\\Program.cs",
-              "RelativeDocumentMoniker": "BackEnd\\Program.cs",
-              "ToolTip": "C:\\Users\\daniela\\Desktop\\TiendaGeek\\TiendaGeek\\BackEnd\\Program.cs",
-              "RelativeToolTip": "BackEnd\\Program.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAABgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T01:26:30.987Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             }
           ]
         }

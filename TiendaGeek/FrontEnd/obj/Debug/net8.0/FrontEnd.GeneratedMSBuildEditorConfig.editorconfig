@@ -17,83 +17,111 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = FrontEnd
 build_property.RootNamespace = FrontEnd
-build_property.ProjectDir = C:\Users\daniela\Desktop\TiendaGeek\TiendaGeek\FrontEnd\
+build_property.ProjectDir = C:\Users\Daniela\source\repos\TiendaGeek\TiendaGeek\FrontEnd\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\daniela\Desktop\TiendaGeek\TiendaGeek\FrontEnd
+build_property.MSBuildProjectDirectory = C:\Users\Daniela\source\repos\TiendaGeek\TiendaGeek\FrontEnd
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/daniela/Desktop/TiendaGeek/TiendaGeek/FrontEnd/Views/Categorium/Create.cshtml]
+[C:/Users/Daniela/source/repos/TiendaGeek/TiendaGeek/FrontEnd/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Daniela/source/repos/TiendaGeek/TiendaGeek/FrontEnd/Views/Categorium/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcml1bVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/daniela/Desktop/TiendaGeek/TiendaGeek/FrontEnd/Views/Categorium/Delete.cshtml]
+[C:/Users/Daniela/source/repos/TiendaGeek/TiendaGeek/FrontEnd/Views/Categorium/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcml1bVxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/daniela/Desktop/TiendaGeek/TiendaGeek/FrontEnd/Views/Categorium/Details.cshtml]
+[C:/Users/Daniela/source/repos/TiendaGeek/TiendaGeek/FrontEnd/Views/Categorium/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcml1bVxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/daniela/Desktop/TiendaGeek/TiendaGeek/FrontEnd/Views/Categorium/Edit.cshtml]
+[C:/Users/Daniela/source/repos/TiendaGeek/TiendaGeek/FrontEnd/Views/Categorium/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcml1bVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/daniela/Desktop/TiendaGeek/TiendaGeek/FrontEnd/Views/Categorium/Index.cshtml]
+[C:/Users/Daniela/source/repos/TiendaGeek/TiendaGeek/FrontEnd/Views/Categorium/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcml1bVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/daniela/Desktop/TiendaGeek/TiendaGeek/FrontEnd/Views/HistorialPedidos/Index.cshtml]
+[C:/Users/Daniela/source/repos/TiendaGeek/TiendaGeek/FrontEnd/Views/Contacto/Contacto.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdG9cQ29udGFjdG8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Daniela/source/repos/TiendaGeek/TiendaGeek/FrontEnd/Views/Contacto/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdG9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Daniela/source/repos/TiendaGeek/TiendaGeek/FrontEnd/Views/HistorialPedidos/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGlzdG9yaWFsUGVkaWRvc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/daniela/Desktop/TiendaGeek/TiendaGeek/FrontEnd/Views/Home/Index.cshtml]
+[C:/Users/Daniela/source/repos/TiendaGeek/TiendaGeek/FrontEnd/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/daniela/Desktop/TiendaGeek/TiendaGeek/FrontEnd/Views/Home/Privacy.cshtml]
+[C:/Users/Daniela/source/repos/TiendaGeek/TiendaGeek/FrontEnd/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/daniela/Desktop/TiendaGeek/TiendaGeek/FrontEnd/Views/Producto/Create.cshtml]
+[C:/Users/Daniela/source/repos/TiendaGeek/TiendaGeek/FrontEnd/Views/ImagenProducto/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1hZ2VuUHJvZHVjdG9cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Daniela/source/repos/TiendaGeek/TiendaGeek/FrontEnd/Views/ImagenProducto/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1hZ2VuUHJvZHVjdG9cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Daniela/source/repos/TiendaGeek/TiendaGeek/FrontEnd/Views/ImagenProducto/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1hZ2VuUHJvZHVjdG9cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Daniela/source/repos/TiendaGeek/TiendaGeek/FrontEnd/Views/ImagenProducto/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1hZ2VuUHJvZHVjdG9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Daniela/source/repos/TiendaGeek/TiendaGeek/FrontEnd/Views/Producto/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/daniela/Desktop/TiendaGeek/TiendaGeek/FrontEnd/Views/Producto/Delete.cshtml]
+[C:/Users/Daniela/source/repos/TiendaGeek/TiendaGeek/FrontEnd/Views/Producto/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/daniela/Desktop/TiendaGeek/TiendaGeek/FrontEnd/Views/Producto/Details.cshtml]
+[C:/Users/Daniela/source/repos/TiendaGeek/TiendaGeek/FrontEnd/Views/Producto/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/daniela/Desktop/TiendaGeek/TiendaGeek/FrontEnd/Views/Producto/Edit.cshtml]
+[C:/Users/Daniela/source/repos/TiendaGeek/TiendaGeek/FrontEnd/Views/Producto/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/daniela/Desktop/TiendaGeek/TiendaGeek/FrontEnd/Views/Producto/Index.cshtml]
+[C:/Users/Daniela/source/repos/TiendaGeek/TiendaGeek/FrontEnd/Views/Producto/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/daniela/Desktop/TiendaGeek/TiendaGeek/FrontEnd/Views/Shared/Error.cshtml]
+[C:/Users/Daniela/source/repos/TiendaGeek/TiendaGeek/FrontEnd/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/daniela/Desktop/TiendaGeek/TiendaGeek/FrontEnd/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Daniela/source/repos/TiendaGeek/TiendaGeek/FrontEnd/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/daniela/Desktop/TiendaGeek/TiendaGeek/FrontEnd/Views/_ViewImports.cshtml]
+[C:/Users/Daniela/source/repos/TiendaGeek/TiendaGeek/FrontEnd/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/daniela/Desktop/TiendaGeek/TiendaGeek/FrontEnd/Views/_ViewStart.cshtml]
+[C:/Users/Daniela/source/repos/TiendaGeek/TiendaGeek/FrontEnd/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/daniela/Desktop/TiendaGeek/TiendaGeek/FrontEnd/Views/Shared/_Layout.cshtml]
+[C:/Users/Daniela/source/repos/TiendaGeek/TiendaGeek/FrontEnd/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-709v5g0hbe

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\daniela\\Desktop\\TiendaGeek\\TiendaGeek\\Entities\\Entities.csproj": {}
+    "C:\\Users\\Daniela\\source\\repos\\TiendaGeek\\TiendaGeek\\Entities\\Entities.csproj": {}
   },
   "projects": {
-    "C:\\Users\\daniela\\Desktop\\TiendaGeek\\TiendaGeek\\Entities\\Entities.csproj": {
+    "C:\\Users\\Daniela\\source\\repos\\TiendaGeek\\TiendaGeek\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\daniela\\Desktop\\TiendaGeek\\TiendaGeek\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\Daniela\\source\\repos\\TiendaGeek\\TiendaGeek\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\daniela\\Desktop\\TiendaGeek\\TiendaGeek\\Entities\\Entities.csproj",
-        "packagesPath": "C:\\Users\\daniela\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\daniela\\Desktop\\TiendaGeek\\TiendaGeek\\Entities\\obj\\",
+        "projectPath": "C:\\Users\\Daniela\\source\\repos\\TiendaGeek\\TiendaGeek\\Entities\\Entities.csproj",
+        "packagesPath": "C:\\Users\\Daniela\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Daniela\\source\\repos\\TiendaGeek\\TiendaGeek\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\daniela\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Daniela\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -90,7 +91,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
