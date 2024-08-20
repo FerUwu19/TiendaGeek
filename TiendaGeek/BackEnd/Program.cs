@@ -1,4 +1,3 @@
-using BackEnd.Services.Implementations;
 using BackEnd.Services.Implemetations;
 using BackEnd.Services.Interfaces;
 using DAL.Implementations;
@@ -47,8 +46,10 @@ builder.Services.AddScoped<IUnidadDeTrabajo, UnidadDeTrabajo>();
 builder.Services.AddScoped<ICarritoDAL, ImplCarritoDAL>();
 builder.Services.AddScoped<ICarritoService, ImplCarritoService>();
 
+builder.Services.AddScoped<ITokenService, TokenService>();
+
 #endregion
-/*
+
 #region Identity
 
 builder.Services.AddIdentityCore<IdentityUser>()
@@ -59,11 +60,11 @@ builder.Services.AddIdentityCore<IdentityUser>()
 
 builder.Services.Configure<IdentityOptions>(options =>
 {
-    options.Password.RequiredLength = 3;
-    options.Password.RequireNonAlphanumeric = false;
-    options.Password.RequireDigit = false;
-    options.Password.RequireLowercase = false;
-    options.Password.RequireUppercase = false;
+    options.Password.RequiredLength = 10;
+    options.Password.RequireNonAlphanumeric = true;
+    options.Password.RequireDigit = true;
+    options.Password.RequireLowercase = true;
+    options.Password.RequireUppercase = true;
 });
 
 #endregion
@@ -92,7 +93,6 @@ builder.Services.AddAuthentication(options =>
     });
 
 #endregion
-*/
 
 var app = builder.Build();
 
@@ -103,6 +103,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

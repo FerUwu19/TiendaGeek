@@ -10,36 +10,36 @@
 </head>
 <body>
     <!-- Start Header Section -->
-    <nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
-
+    <nav class="custom-navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
         <div class="container">
             <a class="navbar-brand" asp-controller="Home" asp-action="Index"><img src="~/images/logo.png" class="d-block w-25" alt="..." /></a>
-
 
             <div class="collapse navbar-collapse" id="navbarsFurni">
                 <ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
                     <li class="nav-item active">
                         <a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
                     </li>
-                    <li><a class="nav-link" asp-controller="Producto" asp-action="Index">Productos</a></li>
 
-                    <!--Necesita rol admin -->
-                    <li><a class="nav-link" asp-controller="Categorium" asp-action="Index">Categoría</a></li>
-                    <li><a class="nav-link" asp-controller="Contacto" asp-action="Index">Mensajes contacto</a></li>
-                    <li><a class="nav-link" asp-controller="HistorialPedidos" asp-action="Index">Historial Pedidos</a></li>
-                    <li><a class="nav-link" asp-controller="ImagenProducto" asp-action="Index">Imagen</a></li>
-                    <!--hasta aqui-->
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <li><a class="nav-link" asp-controller="Producto" asp-action="Index">Productos</a></li>
+                        <li><a class="nav-link" asp-controller="Categorium" asp-action="Index">Categoría</a></li>
+                        <li><a class="nav-link" asp-controller="Mensajes" asp-action="Index">Mensajes contacto</a></li>
+                        <li><a class="nav-link" asp-controller="ImagenProducto" asp-action="Index">Imagen</a></li>
+                    }
 
-                    <li><a class="nav-link" asp-controller="Contacto" asp-action="Contacto">Contacto</a></li>
-
+                    @if (User.IsInRole("User") || User.IsInRole("Admin"))
+                    {
+                        <li><a class="nav-link" asp-controller="Contacto" asp-action="Index">Contacto</a></li>
+                        <li><a class="nav-link" asp-controller="Carrito" asp-action="Index"> <i class="fa-solid fa-cart-shopping " style="color: #ffffff;"></i></a></li>
+                    }
                 </ul>
+
                 <ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
-                    <li><a class="nav-link" asp-controller="Carrito" asp-action="Index"> <i class="fa-solid fa-cart-shopping " style="color: #ffffff;"></i></a></li>
+                    <li><a class="nav-link" asp-controller="Account" asp-action="Login"> <i class="fa-solid fa-user " style="color: #ffffff;"></i></a></li>
                 </ul>
-
             </div>
         </div>
-
     </nav>
     <!-- End Header Section -->
     <div class="container">
@@ -47,7 +47,6 @@
             @RenderBody()
         </main>
     </div>
-
 
     <!-- Start Footer Section -->
     <footer class="footer-section" style="background-color:black; color:white;">
@@ -57,10 +56,8 @@
                     <a class="navbar-brand" asp-controller="Home" asp-action="Index"><img src="~/images/logo-maju.png" class="d-block w-25" alt="..." /></a>
                     <p class="mb-4">
                         Buscamos satisfacer tus necesidades, contamos con productos innovadores y originales, que generan una identidad única.
-
                         En nuestras tiendas podrás encontrar toda clase de figuras de colección exclusivas de TV, anime, cómics entre otras, series de anime en formato DVD, juguetería importada ¡Y mucho más!
                     </p>
-
                     <ul class="list-unstyled custom-social">
                         <li><a href="https://www.facebook.com"><span class="fa fa-brands fa-facebook-f"></span></a></li>
                         <li><a href="https://twitter.com"><span class="fa fa-brands fa-twitter"></span></a></li>
@@ -68,7 +65,6 @@
                         <li><a href="https://cr.linkedin.com/"><span class="fa fa-brands fa-linkedin"></span></a></li>
                     </ul>
                 </div>
-
                 <div class="col-lg-6">
                     <div class="row links-wrap">
                         <div class="col-6 col-sm-6 col-md-3">
@@ -77,7 +73,6 @@
                                     <a class="nav-link" style="color:white;" asp-controller="Home" asp-action="Index">Home</a>
                                 </li>
                                 <li><a class="nav-link" style="color:white;" asp-controller="Productos" asp-action="Index">Productos</a></li>
-
                             </ul>
                         </div>
                     </div>
@@ -86,13 +81,11 @@
                     <div class="row pt-4">
                         <div class="col-lg-6">
                             <p class="mb-2 text-center text-lg-start">
-                                Copyright &copy;<script>document.write(new Date().getFullYear());</script>. Maju&Manga By <a hreff="https://themewagon.com">CiudadManga</a>  <!-- License information: https://untree.co/license/ -->
+                                Copyright &copy;<script>document.write(new Date().getFullYear());</script>. Maju&Manga By <a href="https://themewagon.com">CiudadManga</a>  <!-- License information: https://untree.co/license/ -->
                             </p>
                         </div>
-
                     </div>
                 </div>
-
             </div>
         </div>
     </footer>
