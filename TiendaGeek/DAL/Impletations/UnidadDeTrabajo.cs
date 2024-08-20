@@ -14,15 +14,18 @@ namespace DAL.Implementations
         public ICategoriumDAL CategoriumDAL { get; set; }
         public IImagenProductoDAL ImplImagenProductoDAL { get; set; }
 
+        public IContactoDAL ContactoDALImpl { get; set; }
+
+        IContactoDAL IUnidadDeTrabajo.ContactoDAL => this.ContactoDALImpl;
 
         private TiendaGeekContext _tiendaContext;
 
-        public UnidadDeTrabajo(TiendaGeekContext tiendaContext, IProductoDAL productoDAL, 
-                                ICategoriumDAL categoriumDAL)
+        public UnidadDeTrabajo(TiendaGeekContext tiendaContext, IProductoDAL productoDAL, ICategoriumDAL categoriumDAL, IContactoDAL ContactoDALImpl)
         {
             this._tiendaContext = tiendaContext;
             this.ProductoDAL = productoDAL;
             this.CategoriumDAL = categoriumDAL;
+            this.ContactoDALImpl = ContactoDALImpl;
         }
 
 

@@ -11,7 +11,7 @@ namespace DAL.Interfaces
         IProductoDAL ProductoDAL { get; }
         IImagenProductoDAL ImplImagenProductoDAL { get; }
         ICategoriumDAL CategoriumDAL { get; }
-
+        IContactoDAL ContactoDAL { get; }
         bool Complete();
     }
 }

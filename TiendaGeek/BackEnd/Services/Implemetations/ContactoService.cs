@@ -8,12 +8,12 @@ namespace BackEnd.Services.Implemetations
     public class ContactoService : IContactoService
     {
         private IUnidadDeTrabajo _unidadDeTrabajo;
-        private IContactoDAL _contactoDAL;
+        private IContactoDAL ContactoDAL;
 
         public ContactoService(IUnidadDeTrabajo unidadDeTrabajo, IContactoDAL contactoDAL)
         {
             this._unidadDeTrabajo = unidadDeTrabajo;
-            this._contactoDAL = contactoDAL;
+            this.ContactoDAL = contactoDAL;
         }
 
         private Contacto Convertir(ContactoModel contacto)

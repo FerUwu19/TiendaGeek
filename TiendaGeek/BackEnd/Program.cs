@@ -39,6 +39,9 @@ builder.Services.AddScoped<ICategoriumService, CategoriumService>();
 builder.Services.AddScoped<IHistorialPedidoDAL, ImplHistorialPedidoDAL>();
 builder.Services.AddScoped<IHistorialPedidoServices, ImplHistorialPedidoServices>();
 
+builder.Services.AddScoped<IContactoDAL, ContactoDALImpl>();
+builder.Services.AddScoped<IContactoService, ContactoService>();
+
 builder.Services.AddScoped<IUnidadDeTrabajo, UnidadDeTrabajo>();
 
 builder.Services.AddScoped<ICarritoDAL, ImplCarritoDAL>();
