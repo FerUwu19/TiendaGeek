@@ -1,30 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\daniela\\Desktop\\TiendaGeek\\TiendaGeek\\",
+  "WorkspaceRootPath": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\daniela\\Desktop\\TiendaGeek\\TiendaGeek\\Entities\\Migrations\\20240820013514_InitialAuth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Entities\\Migrations\\20240820013514_InitialAuth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2D03E8B3-2EB9-4C31-A734-48AD58B7EB8F}|BackEnd\\BackEnd.csproj|d:\\universidad\\progra\\proyecto\\tiendageek\\tiendageek\\backend\\controllers\\carritocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D03E8B3-2EB9-4C31-A734-48AD58B7EB8F}|BackEnd\\BackEnd.csproj|solutionrelative:backend\\controllers\\carritocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2D03E8B3-2EB9-4C31-A734-48AD58B7EB8F}|BackEnd\\BackEnd.csproj|c:\\users\\daniela\\desktop\\tiendageek\\tiendageek\\backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{2D03E8B3-2EB9-4C31-A734-48AD58B7EB8F}|BackEnd\\BackEnd.csproj|solutionrelative:backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{2D03E8B3-2EB9-4C31-A734-48AD58B7EB8F}|BackEnd\\BackEnd.csproj|d:\\universidad\\progra\\proyecto\\tiendageek\\tiendageek\\backend\\model\\carritomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D03E8B3-2EB9-4C31-A734-48AD58B7EB8F}|BackEnd\\BackEnd.csproj|solutionrelative:backend\\model\\carritomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3899A7CB-C7C8-4394-AB88-825EDB7D45E9}|Entities\\Entities.csproj|c:\\users\\daniela\\desktop\\tiendageek\\tiendageek\\entities\\entities\\tiendageekcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3899A7CB-C7C8-4394-AB88-825EDB7D45E9}|Entities\\Entities.csproj|solutionrelative:entities\\entities\\tiendageekcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3899A7CB-C7C8-4394-AB88-825EDB7D45E9}|Entities\\Entities.csproj|d:\\universidad\\progra\\proyecto\\tiendageek\\tiendageek\\entities\\entities\\carrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3899A7CB-C7C8-4394-AB88-825EDB7D45E9}|Entities\\Entities.csproj|solutionrelative:entities\\entities\\carrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2D03E8B3-2EB9-4C31-A734-48AD58B7EB8F}|BackEnd\\BackEnd.csproj|c:\\users\\daniela\\desktop\\tiendageek\\tiendageek\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2D03E8B3-2EB9-4C31-A734-48AD58B7EB8F}|BackEnd\\BackEnd.csproj|d:\\universidad\\progra\\proyecto\\tiendageek\\tiendageek\\backend\\services\\interfaces\\icarritoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D03E8B3-2EB9-4C31-A734-48AD58B7EB8F}|BackEnd\\BackEnd.csproj|solutionrelative:backend\\services\\interfaces\\icarritoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D03E8B3-2EB9-4C31-A734-48AD58B7EB8F}|BackEnd\\BackEnd.csproj|d:\\universidad\\progra\\proyecto\\tiendageek\\tiendageek\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2D03E8B3-2EB9-4C31-A734-48AD58B7EB8F}|BackEnd\\BackEnd.csproj|solutionrelative:backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3899A7CB-C7C8-4394-AB88-825EDB7D45E9}|Entities\\Entities.csproj|c:\\users\\daniela\\desktop\\tiendageek\\tiendageek\\entities\\entities\\authdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3899A7CB-C7C8-4394-AB88-825EDB7D45E9}|Entities\\Entities.csproj|solutionrelative:entities\\entities\\authdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2D03E8B3-2EB9-4C31-A734-48AD58B7EB8F}|BackEnd\\BackEnd.csproj|d:\\universidad\\progra\\proyecto\\tiendageek\\tiendageek\\backend\\services\\implemetations\\implcarritoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D03E8B3-2EB9-4C31-A734-48AD58B7EB8F}|BackEnd\\BackEnd.csproj|solutionrelative:backend\\services\\implemetations\\implcarritoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3899A7CB-C7C8-4394-AB88-825EDB7D45E9}|Entities\\Entities.csproj|c:\\users\\daniela\\desktop\\tiendageek\\tiendageek\\entities\\migrations\\tiendageekcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3899A7CB-C7C8-4394-AB88-825EDB7D45E9}|Entities\\Entities.csproj|solutionrelative:entities\\migrations\\tiendageekcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0F438A59-2ABD-4F24-B1D3-B849AA090703}|DAL\\DAL.csproj|d:\\universidad\\progra\\proyecto\\tiendageek\\tiendageek\\dal\\interfaces\\icarritodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F438A59-2ABD-4F24-B1D3-B849AA090703}|DAL\\DAL.csproj|solutionrelative:dal\\interfaces\\icarritodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F438A59-2ABD-4F24-B1D3-B849AA090703}|DAL\\DAL.csproj|d:\\universidad\\progra\\proyecto\\tiendageek\\tiendageek\\dal\\impletations\\implcarritodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F438A59-2ABD-4F24-B1D3-B849AA090703}|DAL\\DAL.csproj|solutionrelative:dal\\impletations\\implcarritodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,84 +42,112 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\daniela\\Desktop\\TiendaGeek\\TiendaGeek\\BackEnd\\appsettings.json",
-              "RelativeDocumentMoniker": "BackEnd\\appsettings.json",
-              "ToolTip": "C:\\Users\\daniela\\Desktop\\TiendaGeek\\TiendaGeek\\BackEnd\\appsettings.json",
-              "RelativeToolTip": "BackEnd\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-08-20T01:37:17.406Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "20240820013514_InitialAuth.cs",
-              "DocumentMoniker": "C:\\Users\\daniela\\Desktop\\TiendaGeek\\TiendaGeek\\Entities\\Migrations\\20240820013514_InitialAuth.cs",
-              "RelativeDocumentMoniker": "Entities\\Migrations\\20240820013514_InitialAuth.cs",
-              "ToolTip": "C:\\Users\\daniela\\Desktop\\TiendaGeek\\TiendaGeek\\Entities\\Migrations\\20240820013514_InitialAuth.cs",
-              "RelativeToolTip": "Entities\\Migrations\\20240820013514_InitialAuth.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "DocumentIndex": 7,
+              "Title": "ImplCarritoDAL.cs",
+              "DocumentMoniker": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\DAL\\Impletations\\ImplCarritoDAL.cs",
+              "RelativeDocumentMoniker": "DAL\\Impletations\\ImplCarritoDAL.cs",
+              "ToolTip": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\DAL\\Impletations\\ImplCarritoDAL.cs",
+              "RelativeToolTip": "DAL\\Impletations\\ImplCarritoDAL.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAQwCkAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T01:35:14.698Z",
+              "WhenOpened": "2024-08-13T01:45:15.542Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "TiendaGeekContextModelSnapshot.cs",
-              "DocumentMoniker": "C:\\Users\\daniela\\Desktop\\TiendaGeek\\TiendaGeek\\Entities\\Migrations\\TiendaGeekContextModelSnapshot.cs",
-              "RelativeDocumentMoniker": "Entities\\Migrations\\TiendaGeekContextModelSnapshot.cs",
-              "ToolTip": "C:\\Users\\daniela\\Desktop\\TiendaGeek\\TiendaGeek\\Entities\\Migrations\\TiendaGeekContextModelSnapshot.cs",
-              "RelativeToolTip": "Entities\\Migrations\\TiendaGeekContextModelSnapshot.cs",
-              "ViewState": "AQIAAAMBAAAAAAAAAIBJwAAAAAAAAAAA",
+              "Title": "ImplCarritoService.cs",
+              "DocumentMoniker": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\BackEnd\\Services\\Implemetations\\ImplCarritoService.cs",
+              "RelativeDocumentMoniker": "BackEnd\\Services\\Implemetations\\ImplCarritoService.cs",
+              "ToolTip": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\BackEnd\\Services\\Implemetations\\ImplCarritoService.cs",
+              "RelativeToolTip": "BackEnd\\Services\\Implemetations\\ImplCarritoService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T02:08:51.999Z",
+              "WhenOpened": "2024-08-13T01:54:03.126Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "TiendaGeekContext.cs",
-              "DocumentMoniker": "C:\\Users\\daniela\\Desktop\\TiendaGeek\\TiendaGeek\\Entities\\Entities\\TiendaGeekContext.cs",
-              "RelativeDocumentMoniker": "Entities\\Entities\\TiendaGeekContext.cs",
-              "ToolTip": "C:\\Users\\daniela\\Desktop\\TiendaGeek\\TiendaGeek\\Entities\\Entities\\TiendaGeekContext.cs",
-              "RelativeToolTip": "Entities\\Entities\\TiendaGeekContext.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAmwCEAAABCAAAA",
+              "Title": "Carrito.cs",
+              "DocumentMoniker": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\Entities\\Entities\\Carrito.cs",
+              "RelativeDocumentMoniker": "Entities\\Entities\\Carrito.cs",
+              "ToolTip": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\Entities\\Entities\\Carrito.cs",
+              "RelativeToolTip": "Entities\\Entities\\Carrito.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T02:02:32.979Z",
+              "WhenOpened": "2024-08-13T02:45:02.246Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "AuthDBContext.cs",
-              "DocumentMoniker": "C:\\Users\\daniela\\Desktop\\TiendaGeek\\TiendaGeek\\Entities\\Entities\\AuthDBContext.cs",
-              "RelativeDocumentMoniker": "Entities\\Entities\\AuthDBContext.cs",
-              "ToolTip": "C:\\Users\\daniela\\Desktop\\TiendaGeek\\TiendaGeek\\Entities\\Entities\\AuthDBContext.cs",
-              "RelativeToolTip": "Entities\\Entities\\AuthDBContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAFAAAA",
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\BackEnd\\Program.cs",
+              "RelativeDocumentMoniker": "BackEnd\\Program.cs",
+              "ToolTip": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\BackEnd\\Program.cs",
+              "RelativeToolTip": "BackEnd\\Program.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACQAAAA+AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T02:02:09.912Z",
+              "WhenOpened": "2024-08-13T02:42:07.969Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CarritoController.cs",
+              "DocumentMoniker": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\BackEnd\\Controllers\\CarritoController.cs",
+              "RelativeDocumentMoniker": "BackEnd\\Controllers\\CarritoController.cs",
+              "ToolTip": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\BackEnd\\Controllers\\CarritoController.cs",
+              "RelativeToolTip": "BackEnd\\Controllers\\CarritoController.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAYwDQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T02:24:15.987Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\daniela\\Desktop\\TiendaGeek\\TiendaGeek\\BackEnd\\Program.cs",
-              "RelativeDocumentMoniker": "BackEnd\\Program.cs",
-              "ToolTip": "C:\\Users\\daniela\\Desktop\\TiendaGeek\\TiendaGeek\\BackEnd\\Program.cs",
-              "RelativeToolTip": "BackEnd\\Program.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAABgAAAAAAAAA",
+              "Title": "ICarritoService.cs",
+              "DocumentMoniker": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\BackEnd\\Services\\Interfaces\\ICarritoService.cs",
+              "RelativeDocumentMoniker": "BackEnd\\Services\\Interfaces\\ICarritoService.cs",
+              "ToolTip": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\BackEnd\\Services\\Interfaces\\ICarritoService.cs",
+              "RelativeToolTip": "BackEnd\\Services\\Interfaces\\ICarritoService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAcAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T01:26:30.987Z",
+              "WhenOpened": "2024-08-13T02:21:31.632Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ICarritoDAL.cs",
+              "DocumentMoniker": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\DAL\\Interfaces\\ICarritoDAL.cs",
+              "RelativeDocumentMoniker": "DAL\\Interfaces\\ICarritoDAL.cs",
+              "ToolTip": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\DAL\\Interfaces\\ICarritoDAL.cs",
+              "RelativeToolTip": "DAL\\Interfaces\\ICarritoDAL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T02:13:54.824Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CarritoModel.cs",
+              "DocumentMoniker": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\BackEnd\\Model\\CarritoModel.cs",
+              "RelativeDocumentMoniker": "BackEnd\\Model\\CarritoModel.cs",
+              "ToolTip": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\BackEnd\\Model\\CarritoModel.cs",
+              "RelativeToolTip": "BackEnd\\Model\\CarritoModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T01:58:47.669Z",
               "EditorCaption": ""
             }
           ]

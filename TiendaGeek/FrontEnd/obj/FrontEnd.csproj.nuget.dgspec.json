@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\daniela\\Desktop\\TiendaGeek\\TiendaGeek\\FrontEnd\\FrontEnd.csproj": {}
+    "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\FrontEnd\\FrontEnd.csproj": {}
   },
   "projects": {
-    "C:\\Users\\daniela\\Desktop\\TiendaGeek\\TiendaGeek\\FrontEnd\\FrontEnd.csproj": {
+    "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\FrontEnd\\FrontEnd.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\daniela\\Desktop\\TiendaGeek\\TiendaGeek\\FrontEnd\\FrontEnd.csproj",
+        "projectUniqueName": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\FrontEnd\\FrontEnd.csproj",
         "projectName": "FrontEnd",
-        "projectPath": "C:\\Users\\daniela\\Desktop\\TiendaGeek\\TiendaGeek\\FrontEnd\\FrontEnd.csproj",
-        "packagesPath": "C:\\Users\\daniela\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\daniela\\Desktop\\TiendaGeek\\TiendaGeek\\FrontEnd\\obj\\",
+        "projectPath": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\FrontEnd\\FrontEnd.csproj",
+        "packagesPath": "C:\\Users\\kengc\\.nuget\\packages\\",
+        "outputPath": "D:\\universidad\\PROGRA\\PROYECTO\\TiendaGeek\\TiendaGeek\\FrontEnd\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\daniela\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\kengc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -49,27 +54,9 @@
               "target": "Package",
               "version": "[6.0.0, )"
             },
-            "Microsoft.AspNetCore.Authentication.JwtBearer": {
-              "target": "Package",
-              "version": "[8.0.8, )"
-            },
             "Microsoft.AspNetCore.Components.QuickGrid": {
               "target": "Package",
               "version": "[8.0.7, )"
-            },
-            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[8.0.8, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[8.0.8, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[8.0.8, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
@@ -95,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
