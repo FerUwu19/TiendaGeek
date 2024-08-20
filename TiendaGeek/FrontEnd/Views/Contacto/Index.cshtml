@@ -1,4 +1,4 @@
-﻿@model IEnumerable<FrontEnd.Models.CategoriumViewModel>
+﻿@model IEnumerable<FrontEnd.Models.ContactoViewModel>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -26,25 +26,28 @@
 
     <div class="container pt-4">
         <div class="row mt-4">
-            <h1 style="color:black; font-weight:600;">Categorías</h1>
+            <h1 style="color:black; font-weight:600;">Mensajes de contacto</h1>
 
         </div>
     </div>
-    <div class="d-flex justify-content-start gap-2 pt-1">
-        <a asp-action="Create" class="btn btn-success border-0 mt-4" style="background-color:#1bc576;">Agregar</a>
-    </div>
 
-    <table class="table mt-5">
+    <table class="table">
         <thead>
             <tr>
                 <th>
-                    @Html.DisplayNameFor(model => model.CodigoCategoria)
+                    @Html.DisplayNameFor(model => model.Id)
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.Nombre)
+                    @Html.DisplayNameFor(model => model.IdUser)
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.Descripcion)
+                    @Html.DisplayNameFor(model => model.Name)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Email)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Message)
                 </th>
                 <th></th>
             </tr>
@@ -54,18 +57,19 @@
             {
                 <tr>
                     <td>
-                        @Html.DisplayFor(modelItem => item.CodigoCategoria)
+                        @Html.DisplayFor(modelItem => item.Id)
                     </td>
                     <td>
-                        @Html.DisplayFor(modelItem => item.Nombre)
+                        @Html.DisplayFor(modelItem => item.IdUser)
                     </td>
                     <td>
-                        @Html.DisplayFor(modelItem => item.Descripcion)
+                        @Html.DisplayFor(modelItem => item.Name)
                     </td>
                     <td>
-                        @Html.ActionLink("Editar", "Edit", new { id = item.CodigoCategoria }, new { @class = "btn btn-success border-0 mt-4", @style = "background-color:#74c0fc; color: #fff;" })
-                        @Html.ActionLink("Detalle", "Details", new { id = item.CodigoCategoria }, new { @class = "btn btn-success border-0 mt-4", @style = "background-color:#faa020; color: #fff;" }) 
-                        @Html.ActionLink("Eliminar", "Delete", new { id = item.CodigoCategoria }, new { @class = "btn btn-success border-0 mt-4", @style = "background-color:#ec1313; color: #fff;" })
+                        @Html.DisplayFor(modelItem => item.Email)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Message)
                     </td>
                 </tr>
             }

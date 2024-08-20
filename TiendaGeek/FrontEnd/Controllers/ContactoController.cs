@@ -1,4 +1,6 @@
-﻿using FrontEnd.Helpers.Interfaces;
+﻿using FrontEnd.ApiModel;
+using FrontEnd.Helpers.Implementations;
+using FrontEnd.Helpers.Interfaces;
 using FrontEnd.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -39,6 +41,12 @@ namespace FrontEnd.Controllers
             {
                 return View();
             }
+        }
+
+        // GET: Contacto
+        public ActionResult Index()
+        {
+            return View(contactoHelper.GetContactos());
         }
     }//fn class
 }//fn space

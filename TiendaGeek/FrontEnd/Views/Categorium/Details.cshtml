@@ -2,14 +2,18 @@
 
 @{
     ViewData["Title"] = "Details";
+    Layout = "_Layout";
 }
 
-<h1>Details</h1>
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" asp-append-version="true" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
 
 <div>
-    <h4>Categorium</h4>
     <hr />
     <dl class="row">
+        <h1 style="color:black; font-weight:600;">Detalle de la categoría</h1>
         <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.CodigoCategoria)
         </dt>
@@ -33,6 +37,6 @@
 
 <div>
     @Html.ActionLink("Edit", "Edit", new { id = Model.CodigoCategoria }) |
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">Volver a categorías</a>
 </div>
 

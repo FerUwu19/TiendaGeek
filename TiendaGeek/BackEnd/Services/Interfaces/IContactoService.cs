@@ -6,5 +6,6 @@ namespace BackEnd.Services.Interfaces
     {
         public bool Add(ContactoModel contacto);
 
+        IEnumerable<ContactoModel> Get();
     }//fn class
 }//fn space

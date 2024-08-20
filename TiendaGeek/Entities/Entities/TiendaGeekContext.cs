@@ -15,9 +15,23 @@ public partial class TiendaGeekContext : DbContext
     {
     }
 
+    public virtual DbSet<AspNetRole> AspNetRoles { get; set; }
+
+    public virtual DbSet<AspNetRoleClaim> AspNetRoleClaims { get; set; }
+
+    public virtual DbSet<AspNetUser> AspNetUsers { get; set; }
+
+    public virtual DbSet<AspNetUserClaim> AspNetUserClaims { get; set; }
+
+    public virtual DbSet<AspNetUserLogin> AspNetUserLogins { get; set; }
+
+    public virtual DbSet<AspNetUserToken> AspNetUserTokens { get; set; }
+
     public virtual DbSet<Carrito> Carritos { get; set; }
 
     public virtual DbSet<Categorium> Categoria { get; set; }
+
+    public virtual DbSet<Contacto> Contactos { get; set; }
 
     public virtual DbSet<HistorialPedido> HistorialPedidos { get; set; }
 
@@ -31,13 +45,79 @@ public partial class TiendaGeekContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Server=DANIELA\\SQLEXPRESS;Database=TiendaGeek;Integrated Security=True;Trusted_Connection=True;TrustServerCertificate=True;");
+        => optionsBuilder.UseSqlServer("Server=DESKTOP-LLJVFI6\\SQLEXPRESS;Database=TiendaGeek;Integrated Security=True;Trusted_Connection=True; TrustServerCertificate=True;");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        modelBuilder.Entity<AspNetRole>(entity =>
+        {
+            entity.HasIndex(e => e.NormalizedName, "RoleNameIndex")
+                .IsUnique()
+                .HasFilter("([NormalizedName] IS NOT NULL)");
+
+            entity.Property(e => e.Name).HasMaxLength(256);
+            entity.Property(e => e.NormalizedName).HasMaxLength(256);
+        });
+
+        modelBuilder.Entity<AspNetRoleClaim>(entity =>
+        {
+            entity.HasIndex(e => e.RoleId, "IX_AspNetRoleClaims_RoleId");
+
+            entity.HasOne(d => d.Role).WithMany(p => p.AspNetRoleClaims).HasForeignKey(d => d.RoleId);
+        });
+
+        modelBuilder.Entity<AspNetUser>(entity =>
+        {
+            entity.HasIndex(e => e.NormalizedEmail, "EmailIndex");
+
+            entity.HasIndex(e => e.NormalizedUserName, "UserNameIndex")
+                .IsUnique()
+                .HasFilter("([NormalizedUserName] IS NOT NULL)");
+
+            entity.Property(e => e.Email).HasMaxLength(256);
+            entity.Property(e => e.NormalizedEmail).HasMaxLength(256);
+            entity.Property(e => e.NormalizedUserName).HasMaxLength(256);
+            entity.Property(e => e.UserName).HasMaxLength(256);
+
+            entity.HasMany(d => d.Roles).WithMany(p => p.Users)
+                .UsingEntity<Dictionary<string, object>>(
+                    "AspNetUserRole",
+                    r => r.HasOne<AspNetRole>().WithMany().HasForeignKey("RoleId"),
+                    l => l.HasOne<AspNetUser>().WithMany().HasForeignKey("UserId"),
+                    j =>
+                    {
+                        j.HasKey("UserId", "RoleId");
+                        j.ToTable("AspNetUserRoles");
+                        j.HasIndex(new[] { "RoleId" }, "IX_AspNetUserRoles_RoleId");
+                    });
+        });
+
+        modelBuilder.Entity<AspNetUserClaim>(entity =>
+        {
+            entity.HasIndex(e => e.UserId, "IX_AspNetUserClaims_UserId");
+
+            entity.HasOne(d => d.User).WithMany(p => p.AspNetUserClaims).HasForeignKey(d => d.UserId);
+        });
+
+        modelBuilder.Entity<AspNetUserLogin>(entity =>
+        {
+            entity.HasKey(e => new { e.LoginProvider, e.ProviderKey });
+
+            entity.HasIndex(e => e.UserId, "IX_AspNetUserLogins_UserId");
+
+            entity.HasOne(d => d.User).WithMany(p => p.AspNetUserLogins).HasForeignKey(d => d.UserId);
+        });
+
+        modelBuilder.Entity<AspNetUserToken>(entity =>
+        {
+            entity.HasKey(e => new { e.UserId, e.LoginProvider, e.Name });
+
+            entity.HasOne(d => d.User).WithMany(p => p.AspNetUserTokens).HasForeignKey(d => d.UserId);
+        });
+
         modelBuilder.Entity<Carrito>(entity =>
         {
-            entity.HasKey(e => e.CodigoCarrito).HasName("PK__Carrito__20E75EFA432AFAF3");
+            entity.HasKey(e => e.CodigoCarrito).HasName("PK__Carrito__20E75EFA8E9F4FB3");
 
             entity.ToTable("Carrito");
 
@@ -45,16 +125,16 @@ public partial class TiendaGeekContext : DbContext
 
             entity.HasOne(d => d.CodigoProductoNavigation).WithMany(p => p.Carritos)
                 .HasForeignKey(d => d.CodigoProducto)
-                .HasConstraintName("FK__Carrito__CodigoP__4222D4EF");
+                .HasConstraintName("FK__Carrito__CodigoP__5441852A");
 
             entity.HasOne(d => d.CodigoUsuarioNavigation).WithMany(p => p.Carritos)
                 .HasForeignKey(d => d.CodigoUsuario)
-                .HasConstraintName("FK__Carrito__CodigoU__412EB0B6");
+                .HasConstraintName("FK__Carrito__CodigoU__534D60F1");
         });
 
         modelBuilder.Entity<Categorium>(entity =>
         {
-            entity.HasKey(e => e.CodigoCategoria).HasName("PK__Categori__3CEE2F4C43D6803C");
+            entity.HasKey(e => e.CodigoCategoria).HasName("PK__Categori__3CEE2F4C97C23F2E");
 
             entity.Property(e => e.Descripcion).HasColumnType("text");
             entity.Property(e => e.Nombre)
@@ -62,9 +142,24 @@ public partial class TiendaGeekContext : DbContext
                 .IsUnicode(false);
         });
 
+        modelBuilder.Entity<Contacto>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PK__Contacto__3214EC0704298AB8");
+
+            entity.ToTable("Contacto");
+
+            entity.Property(e => e.Email)
+                .HasMaxLength(100)
+                .IsUnicode(false);
+            entity.Property(e => e.Message).HasColumnType("text");
+            entity.Property(e => e.Name)
+                .HasMaxLength(100)
+                .IsUnicode(false);
+        });
+
         modelBuilder.Entity<HistorialPedido>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__Historia__3213E83FFF09D83E");
+            entity.HasKey(e => e.Id).HasName("PK__Historia__3213E83F49F6A27E");
 
             entity.ToTable("Historial_Pedidos");
 
@@ -78,7 +173,7 @@ public partial class TiendaGeekContext : DbContext
 
         modelBuilder.Entity<ImagenProducto>(entity =>
         {
-            entity.HasKey(e => e.CodigoImagen).HasName("PK__ImagenPr__B3306E291A1321BD");
+            entity.HasKey(e => e.CodigoImagen).HasName("PK__ImagenPr__B3306E29F2199085");
 
             entity.ToTable("ImagenProducto");
 
@@ -88,27 +183,27 @@ public partial class TiendaGeekContext : DbContext
 
             entity.HasOne(d => d.CodigoProductoNavigation).WithMany(p => p.ImagenProductos)
                 .HasForeignKey(d => d.CodigoProducto)
-                .HasConstraintName("FK__ImagenPro__Codig__3E52440B");
+                .HasConstraintName("FK__ImagenPro__Codig__5070F446");
         });
 
         modelBuilder.Entity<Orden>(entity =>
         {
-            entity.HasKey(e => e.CodigoOrden).HasName("PK__Orden__1B9107A5AE976C29");
+            entity.HasKey(e => e.CodigoOrden).HasName("PK__Orden__1B9107A53D769B3D");
 
             entity.ToTable("Orden");
 
             entity.HasOne(d => d.CodigoCarritoNavigation).WithMany(p => p.Ordens)
                 .HasForeignKey(d => d.CodigoCarrito)
-                .HasConstraintName("FK__Orden__CodigoCar__45F365D3");
+                .HasConstraintName("FK__Orden__CodigoCar__5812160E");
 
             entity.HasOne(d => d.CodigoUsuarioNavigation).WithMany(p => p.Ordens)
                 .HasForeignKey(d => d.CodigoUsuario)
-                .HasConstraintName("FK__Orden__CodigoUsu__44FF419A");
+                .HasConstraintName("FK__Orden__CodigoUsu__571DF1D5");
         });
 
         modelBuilder.Entity<Producto>(entity =>
         {
-            entity.HasKey(e => e.CodigoProducto).HasName("PK__Producto__785B009EE00033A2");
+            entity.HasKey(e => e.CodigoProducto).HasName("PK__Producto__785B009E79A2EC7E");
 
             entity.ToTable("Producto");
 
@@ -123,12 +218,12 @@ public partial class TiendaGeekContext : DbContext
 
             entity.HasOne(d => d.CodigoCategoriaNavigation).WithMany(p => p.Productos)
                 .HasForeignKey(d => d.CodigoCategoria)
-                .HasConstraintName("FK__Producto__Codigo__3B75D760");
+                .HasConstraintName("FK__Producto__Codigo__4D94879B");
         });
 
         modelBuilder.Entity<Usuario>(entity =>
         {
-            entity.HasKey(e => e.CodigoUsuario).HasName("PK__Usuario__F0C18F5893699BB7");
+            entity.HasKey(e => e.CodigoUsuario).HasName("PK__Usuario__F0C18F58F2C219AA");
 
             entity.ToTable("Usuario");
 

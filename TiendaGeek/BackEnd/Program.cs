@@ -48,7 +48,7 @@ builder.Services.AddScoped<ICarritoDAL, ImplCarritoDAL>();
 builder.Services.AddScoped<ICarritoService, ImplCarritoService>();
 
 #endregion
-
+/*
 #region Identity
 
 builder.Services.AddIdentityCore<IdentityUser>()
@@ -92,7 +92,7 @@ builder.Services.AddAuthentication(options =>
     });
 
 #endregion
-
+*/
 
 var app = builder.Build();
 

@@ -1,4 +1,6 @@
-﻿using FrontEnd.Helpers.Interfaces;
+﻿using FrontEnd.Helpers.Implementations;
+using FrontEnd.Helpers.Implemetations;
+using FrontEnd.Helpers.Interfaces;
 using FrontEnd.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -9,23 +11,35 @@ namespace FrontEnd.Controllers
     {
 
         private readonly IImagenProductoHelper ImagenProductoHelper;
+        private readonly IProductoHelper ProductoHelper;
 
-        public ImagenProductoController(IImagenProductoHelper ImagenProductoHelper)
+        public ImagenProductoController(IImagenProductoHelper ImagenProductoHelper, IProductoHelper productoHelper)
         {
             this.ImagenProductoHelper = ImagenProductoHelper;
+            this.ProductoHelper = productoHelper;
         }
 
         // GET: ImagenProducto
         public ActionResult Index()
         {
-            return View(ImagenProductoHelper.GetImagenProductos());
-        }
+            var imagenesProductos = ImagenProductoHelper.GetImagenProductos();
 
+            foreach (var imagen in imagenesProductos)
+            {
+                var producto = ProductoHelper.GetProducto(imagen.CodigoProducto.Value);
+                imagen.NombreProducto = producto.Nombre; // Asigna el nombre del producto
+            }
+
+            return View(imagenesProductos);
+        }
 
         // GET: ImagenProducto/Create
         public ActionResult Create()
         {
-            return View();
+
+            ImagenProductoViewModel imagen = new ImagenProductoViewModel();
+            imagen.Productos = ProductoHelper.GetProductos();
+            return View(imagen);
         }
 
         // POST: ImagenProducto/Create
@@ -33,21 +47,27 @@ namespace FrontEnd.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create(ImagenProductoViewModel ImagenProducto)
         {
-            try
+            if (ModelState.IsValid)
             {
-                _ = ImagenProductoHelper.Add(ImagenProducto);
-                return RedirectToAction(nameof(Index));
+                try
+                {
+                    _ = ImagenProductoHelper.Add(ImagenProducto);
+                    return RedirectToAction(nameof(Index));
+                }
+                catch (Exception ex)
+                {
+                    ModelState.AddModelError("", $"Error al editar el producto: {ex.Message}");
+                }
             }
-            catch
-            {
-                return View();
-            }
+            ImagenProducto.Productos = ProductoHelper.GetProductos();
+            return View(ImagenProducto);
         }
 
         // GET: ImagenProducto/Edit/5
         public ActionResult Edit(int id)
         {
             ImagenProductoViewModel ImagenProducto = ImagenProductoHelper.GetImagenProducto(id);
+            ImagenProducto.Productos = ProductoHelper.GetProductos();
             return View(ImagenProducto);
         }
 
@@ -56,15 +76,20 @@ namespace FrontEnd.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Edit(ImagenProductoViewModel ImagenProducto)
         {
-            try
+            if (ModelState.IsValid)
             {
-                _ = ImagenProductoHelper.Update(ImagenProducto);
-                return RedirectToAction(nameof(Index));
+                try
+                {
+                    _ = ImagenProductoHelper.Update(ImagenProducto);
+                    return RedirectToAction(nameof(Index));
+                }
+                catch (Exception ex)
+                {
+                    ModelState.AddModelError("", $"Error al editar el producto: {ex.Message}");
+                }
             }
-            catch
-            {
-                return View();
-            }
+            ImagenProducto.Productos = ProductoHelper.GetProductos();
+            return View(ImagenProducto);
         }
 
         // GET: ImagenProducto/Delete/5
