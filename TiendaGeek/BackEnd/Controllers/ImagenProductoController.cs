@@ -53,5 +53,17 @@ namespace BackEnd.Controllers
             ImagenProductoModel imagenProducto = new ImagenProductoModel { CodigoImagen = id };
             services.Remove(imagenProducto);
         }
+
+        //funcion para las imagenes
+        [HttpGet("PorProducto/{productoId}")]
+        public IActionResult GetImagenesPorProducto(int productoId)
+        {
+            var imagenes = services.GetImagenesPorProducto(productoId);
+            if (imagenes == null || !imagenes.Any())
+            {
+                return NotFound();
+            }
+            return Ok(imagenes);
+        }
     }
 }

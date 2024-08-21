@@ -14,5 +14,7 @@ namespace DAL.Interfaces
         ImagenProducto Get(int _id);
         bool Update(ImagenProducto _img);
         bool Remove(ImagenProducto _img);
+
+        IEnumerable<ImagenProducto> GetImagenesPorProducto(int productoId);
     }
 }

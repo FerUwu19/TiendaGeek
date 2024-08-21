@@ -10,16 +10,37 @@ namespace FrontEnd.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly IProductoHelper ProductoHelper;
+        private readonly IImagenProductoHelper ImagenProductoHelper;
 
-        public HomeController(IProductoHelper productoHelper, ILogger<HomeController> logger)
+        public HomeController(IProductoHelper productoHelper, ILogger<HomeController> logger, IImagenProductoHelper imagenProductoHelper)
         {
             this.ProductoHelper = productoHelper;
             _logger = logger;
+            this.ImagenProductoHelper = imagenProductoHelper;
         }
 
         public IActionResult Index()
         {
-            return View(ProductoHelper.GetProductos());
+
+            List<ProductoViewModel> listaProductos;
+
+            listaProductos = ProductoHelper.GetProductos();
+
+            // Obtener la primera imagen de cada producto o una imagen por defecto
+            foreach (var producto in listaProductos)
+            {
+                var imagenes = ImagenProductoHelper.GetImagenesPorProducto(producto.CodigoProducto);
+                if (imagenes != null && imagenes.Any())
+                {
+                    producto.ImagenPrincipal = imagenes.First().RutaImagen; // Asignar la primera imagen como principal
+                }
+                else
+                {
+                    // Asignar una imagen por defecto si no hay imágenes
+                    producto.ImagenPrincipal = "~/images/imgNotFound.png";
+                }
+            }
+            return View(listaProductos);
         }
 
         public IActionResult Privacy()

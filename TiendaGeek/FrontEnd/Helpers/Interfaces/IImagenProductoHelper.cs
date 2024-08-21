@@ -10,5 +10,6 @@ namespace FrontEnd.Helpers.Interfaces
         ImagenProductoViewModel Update(ImagenProductoViewModel ImagenProducto);
         ImagenProductoViewModel Remove(int id);
 
+        List<ImagenProductoViewModel> GetImagenesPorProducto(int productoId);
     }
 }

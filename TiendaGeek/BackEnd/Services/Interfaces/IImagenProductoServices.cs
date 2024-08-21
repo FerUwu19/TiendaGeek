@@ -9,5 +9,6 @@ namespace BackEnd.Services.Interfaces
         ImagenProductoModel Get(int _id);
         bool Update(ImagenProductoModel _img);
         bool Remove(ImagenProductoModel _img);
+        IEnumerable<ImagenProductoModel> GetImagenesPorProducto(int codigoProducto);
     }
 }

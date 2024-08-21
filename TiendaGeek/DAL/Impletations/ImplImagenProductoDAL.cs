@@ -68,5 +68,14 @@ namespace DAL.Impletations
                 return false;
             }
         }
+
+
+        //Método para obtener las imágenes por producto
+        public IEnumerable<ImagenProducto> GetImagenesPorProducto(int productoId)
+        {
+            return context.ImagenProductos
+                          .Where(img => img.CodigoProducto == productoId)
+                          .ToList();
+        }
     }
 }

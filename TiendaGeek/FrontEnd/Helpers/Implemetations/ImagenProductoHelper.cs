@@ -106,5 +106,37 @@ namespace FrontEnd.Helpers.Implemetations
             return ImagenProducto;
         }
 
+        //para el manejo de imagenes
+        public List<ImagenProductoViewModel> GetImagenesPorProducto(int productoId)
+        {
+            HttpResponseMessage responseMessage = ServiceRepository.GetResponse($"api/ImagenProducto/PorProducto/{productoId}");
+            List<ImagenProducto> resultado = new List<ImagenProducto>();
+
+            if (responseMessage != null)
+            {
+                var content = responseMessage.Content.ReadAsStringAsync().Result;
+
+                // Verifica si el contenido no es un array y maneja la situación
+                if (content.StartsWith("{"))
+                {
+                    // No hay imágenes, puedes devolver una lista vacía o manejarlo de otra forma
+                    return new List<ImagenProductoViewModel>();
+                }
+
+                resultado = JsonConvert.DeserializeObject<List<ImagenProducto>>(content);
+            }
+
+            List<ImagenProductoViewModel> imagenesProducto = new List<ImagenProductoViewModel>();
+
+            foreach (var item in resultado)
+            {
+                imagenesProducto.Add(Convertir(item));
+            }
+
+            return imagenesProducto;
+        }
+
+
+
     }
 }

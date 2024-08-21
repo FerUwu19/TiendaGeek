@@ -9,6 +9,28 @@ namespace BackEnd.Services.Implemetations
     {
         public IImagenProductoDAL imagenProducto;
 
+        private ImagenProducto Convertir(ImagenProductoModel _img)
+        {
+            ImagenProducto img = new ImagenProducto()
+            {
+                CodigoImagen = _img.CodigoImagen,
+                CodigoProducto = _img.CodigoProducto,
+                RutaImagen = _img.RutaImagen
+            };
+            return img;
+        }
+
+        private ImagenProductoModel Convertir(ImagenProducto _img)
+        {
+            ImagenProductoModel img = new ImagenProductoModel()
+            {
+                CodigoImagen = _img.CodigoImagen,
+                CodigoProducto = _img.CodigoProducto,
+                RutaImagen = _img.RutaImagen
+            };
+            return img;
+
+        }
         public ImplImagenProductoServices(IImagenProductoDAL _img)
         {
             this.imagenProducto = _img;
@@ -44,27 +66,18 @@ namespace BackEnd.Services.Implemetations
             return this.imagenProducto.Update(Convertir(_img));
         }
 
-        private ImagenProducto Convertir(ImagenProductoModel _img)
-        {
-            ImagenProducto img = new ImagenProducto()
-            {
-                CodigoImagen = _img.CodigoImagen,
-                CodigoProducto = _img.CodigoProducto,
-                RutaImagen = _img.RutaImagen
-            };
-            return img;
-        }
 
-        private ImagenProductoModel Convertir(ImagenProducto _img)
+        public IEnumerable<ImagenProductoModel> GetImagenesPorProducto(int productoId)
         {
-            ImagenProductoModel img = new ImagenProductoModel()
-            {
-                CodigoImagen = _img.CodigoImagen,
-                CodigoProducto = _img.CodigoProducto,
-                RutaImagen = _img.RutaImagen
-            };
-            return img;
+            var list = this.imagenProducto.GetImagenesPorProducto(productoId);
+            var imagenesProducto = new List<ImagenProductoModel>();
 
+            foreach (var item in list)
+            {
+                imagenesProducto.Add(Convertir(item));
+            }
+
+            return imagenesProducto;
         }
     }
 }

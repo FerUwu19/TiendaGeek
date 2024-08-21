@@ -52,7 +52,7 @@
                                 @foreach (var categoria in categoriasDisponibles)
                                 {
                                     var isSelected = categoria.CodigoCategoria == (int?)ViewBag.CurrentCategoria ? "selected" : "";
-                                    <option value="@categoria.CodigoCategoria" >@categoria.Nombre</option>
+                                    <option value="@categoria.CodigoCategoria">@categoria.Nombre</option>
                                 }
                             </select>
                         </div>
@@ -79,10 +79,13 @@
                     @foreach (var item in Model)
                     {
                         <div class="col-12 col-md-4 col-lg-3">
-                            <div class=" mt-4">
+                            <div class="mt-4">
                                 <a class="product-item" href="@Url.Action("Details", "Producto", new { id = item.CodigoProducto })">
-                                    <img src="images/imgNotFound.png" class="img-fluid product-thumbnail" alt="Default Image">
-                                    <h3 class="product-title">@item.Nombre</h3>
+                                    <img src="@(string.IsNullOrEmpty(item.ImagenPrincipal) ? "~/images/imgNotFound.png" : item.ImagenPrincipal)"
+                                         alt="@item.Nombre"
+                                         class="img-fluid" />
+
+                                    <h3 class="product-title mt-2">@item.Nombre</h3>
                                     <strong class="product-price">$@item.Precio</strong>
                                 </a>
                                 <div class="row justify-content-center">
@@ -98,6 +101,7 @@
                             </div>
                         </div>
                     }
+
                 </div>
             </div>
         </div>

@@ -64,7 +64,9 @@
 
                             <a class="product-item">
                                 <a class="product-item" href="@Url.Action("Details", "Producto", new { id = producto.CodigoProducto })">
-                                    <img src="images/imgNotFound.png" class="img-fluid product-thumbnail" alt="Default Image">
+                                    <img src="@(string.IsNullOrEmpty(producto.ImagenPrincipal) ? "~/images/imgNotFound.png" : producto.ImagenPrincipal)"
+                                         alt="@producto.Nombre"
+                                         class="img-fluid" />
                                 </a>
                                 <h3 class="product-title">@producto.Nombre</h3>
                                 <strong class="product-price">$@producto.Precio</strong>
