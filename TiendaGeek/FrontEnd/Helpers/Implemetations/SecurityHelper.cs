@@ -19,7 +19,6 @@ namespace FrontEnd.Helpers.Implemetations
         {
             return new LoginAPI();
         }
-
         public LoginAPI Login(UserViewModel user)
         {
             try
@@ -28,20 +27,53 @@ namespace FrontEnd.Helpers.Implemetations
 
                 HttpResponseMessage responseMessage = ServiceRepository
                                 .PostResponse("/api/Auth/login", new { user.UserName, user.Password });
-                var content = responseMessage.Content.ReadAsStringAsync().Result;   
-                LoginAPI LoginAPI = JsonConvert.DeserializeObject<LoginAPI>(content);
 
-                token = LoginAPI.Token;
+                var content = responseMessage.Content.ReadAsStringAsync().Result;
 
-                return LoginAPI;
+                if (!responseMessage.IsSuccessStatusCode)
+                {
+                    throw new Exception("Error en la solicitud: " + responseMessage.StatusCode);
+                }
 
+                Console.WriteLine(content); // Imprime el contenido para depuración
 
+                LoginAPI loginAPI = JsonConvert.DeserializeObject<LoginAPI>(content);
+
+                token = loginAPI.Token;
+
+                return loginAPI;
+            }
+            catch (JsonReaderException ex)
+            {
+                Console.WriteLine("Error al deserializar JSON: " + ex.Message);
+                throw;
             }
             catch (Exception)
             {
-
                 throw;
             }
         }
+
+
+        public bool Register(UserViewModel user)
+        {
+            try
+            {
+                HttpResponseMessage responseMessage = ServiceRepository.PostResponse("/api/Auth/register", new
+                {
+                    Username = user.UserName,
+                    Email = user.Email,
+                    Password = user.Password
+                });
+
+                return responseMessage.IsSuccessStatusCode;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
+
     }
 }

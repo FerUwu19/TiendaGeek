@@ -8,10 +8,12 @@ namespace FrontEnd.Models
         [Required]
         public string UserName { get; set; }
 
+        public string? Email { get; set; }
+
         [DataType(DataType.Password)]
         public string Password { get; set; }
 
-        public string ReturnUrl { get; set; }
+        public string? ReturnUrl { get; set; }
 
         public bool RememberLogin { get; set; }
     }

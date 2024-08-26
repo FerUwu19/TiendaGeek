@@ -1,0 +1,52 @@
+﻿@model FrontEnd.Models.UserViewModel
+
+@{
+    ViewData["Title"] = "Register";
+    Layout = "_Layout"; // Cambiar el layout a "_Layout" como en ProductoViewModel
+}
+
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" asp-append-version="true" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+
+<h2>Register</h2>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form asp-action="Register">
+                <div class="form-group">
+                    <label asp-for="UserName" class="control-label"></label>
+                    <input asp-for="UserName" class="form-control" />
+                    <span asp-validation-for="UserName" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Email" class="control-label"></label>
+                    <input asp-for="Email" class="form-control" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Password" class="control-label"></label>
+                    <input asp-for="Password" class="form-control" type="password" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+
+                <div class="d-flex mt-4 justify-content-center">
+                    <button type="submit" style="background-color: #007bff; border: 1px solid #007bff; color: white; padding: 0.5rem 1rem; font-size: 1rem; border-radius: 0.25rem;" onmouseover="this.style.backgroundColor='#0056b3'; this.style.borderColor='#004085';" onmouseout="this.style.backgroundColor='#007bff'; this.style.borderColor='#007bff';">Registrarse</button>
+                </div>
+
+                @if (ViewBag.Message != null)
+                {
+                    <div class="alert alert-danger mt-3">@ViewBag.Message</div>
+                }
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

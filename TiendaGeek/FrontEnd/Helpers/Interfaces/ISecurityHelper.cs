@@ -1,4 +1,5 @@
-﻿using FrontEnd.ApiModels;
+﻿using FrontEnd.ApiModel;
+using FrontEnd.ApiModels;
 using FrontEnd.Models;
 
 namespace FrontEnd.Helpers.Interfaces
@@ -8,5 +9,6 @@ namespace FrontEnd.Helpers.Interfaces
         LoginAPI GetUser(UserViewModel user);
 
         LoginAPI Login(UserViewModel user);
+        bool Register(UserViewModel user);
     }
 }

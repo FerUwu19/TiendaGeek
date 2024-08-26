@@ -24,19 +24,20 @@
                     {
                         <li><a class="nav-link" asp-controller="Producto" asp-action="Index">Productos</a></li>
                         <li><a class="nav-link" asp-controller="Categorium" asp-action="Index">Categoría</a></li>
-                        <li><a class="nav-link" asp-controller="Mensajes" asp-action="Index">Mensajes contacto</a></li>
+                        <li><a class="nav-link" asp-controller="Contacto" asp-action="Index">Mensajes contacto</a></li>
                         <li><a class="nav-link" asp-controller="ImagenProducto" asp-action="Index">Imagen</a></li>
                     }
-
-                    @if (User.IsInRole("User") || User.IsInRole("Admin"))
+                    else
                     {
-                        <li><a class="nav-link" asp-controller="Contacto" asp-action="Index">Contacto</a></li>
+                        <li><a class="nav-link" asp-controller="Producto" asp-action="Index">Productos</a></li>
+                        <li><a class="nav-link" asp-controller="Contacto" asp-action="Contacto">Contacto</a></li>
                         <li><a class="nav-link" asp-controller="Carrito" asp-action="Index"> <i class="fa-solid fa-cart-shopping " style="color: #ffffff;"></i></a></li>
                     }
                 </ul>
 
                 <ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
                     <li><a class="nav-link" asp-controller="Account" asp-action="Login"> <i class="fa-solid fa-user " style="color: #ffffff;"></i></a></li>
+                    <li><a class="nav-link" asp-controller="Account" asp-action="Register"> Registro</a></li>
                 </ul>
             </div>
         </div>

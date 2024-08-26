@@ -87,9 +87,32 @@ namespace FrontEnd.Controllers
 
         }
 
-        public IActionResult Index()
+        public IActionResult Register(string ReturnUrl = "/")
         {
-            return View();
+            var model = new UserViewModel { ReturnUrl = ReturnUrl };
+            return View(model);
         }
+
+        [HttpPost]
+        public IActionResult Register(UserViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var isRegistered = SecurityHelper.Register(model);
+
+                if (isRegistered)
+                {
+                    return RedirectToAction("Login");
+                }
+                else
+                {
+                    ViewBag.Message = "Registration failed. Please try again.";
+                    return View(model);
+                }
+            }
+
+            return View(model);
+        }
+
     }
 }

@@ -3,6 +3,7 @@ using BackEnd.Services.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Tokens;
 
 namespace BackEnd.Controllers
 {
@@ -16,8 +17,8 @@ namespace BackEnd.Controllers
         public AuthController(UserManager<IdentityUser> userManager,
                                 ITokenService tokenService)
         {
-                this.userManager = userManager;
-            this.TokenService = tokenService;   
+            this.userManager = userManager;
+            this.TokenService = tokenService;
         }
 
 
@@ -31,14 +32,27 @@ namespace BackEnd.Controllers
             LoginModel Usuario = new LoginModel();
             if (user != null && await userManager.CheckPasswordAsync(user, model.Password))
             {
-               
+
                 var userRoles = await userManager.GetRolesAsync(user);
 
-                var jwtToken = TokenService.CreateToken(user, userRoles.ToList());
+                try
+                {
 
-                Usuario.Token = jwtToken;   
-                Usuario.Roles = userRoles.ToList();
-                Usuario.Username = user.UserName;
+                    var jwtToken = TokenService.CreateToken(user, userRoles.ToList());
+
+                    Usuario.Token = jwtToken;
+                    Usuario.Roles = userRoles.ToList();
+                    Usuario.Username = user.UserName;
+                }
+                catch (SecurityTokenException ex)
+                {
+                    return StatusCode(500, "Error al crear el token: " + ex.Message);
+                }
+                catch (Exception ex)
+                {
+                    return StatusCode(500, "Error interno: " + ex.Message);
+                }
+
 
 
                 return Ok(Usuario);
@@ -55,25 +69,33 @@ namespace BackEnd.Controllers
 
             var userExists = await userManager.FindByNameAsync(model.Username);
 
-            if (userExists != null) {
+            if (userExists != null)
+            {
                 return StatusCode(StatusCodes.Status500InternalServerError, new Response { Status = "Error", Message = "User already exists!" });
             }
 
-            IdentityUser user = new IdentityUser{
-                    Email = model.Email,
-                    SecurityStamp = Guid.NewGuid().ToString(),  
-                    UserName = model.Username
-            }; 
+            IdentityUser user = new IdentityUser
+            {
+                Email = model.Email,
+                SecurityStamp = Guid.NewGuid().ToString(),
+                UserName = model.Username
+            };
 
-          var result=  await userManager.CreateAsync(user,model.Password);
-            if (!result.Succeeded) {
-                return StatusCode(StatusCodes.Status500InternalServerError, new Response { Status = "Error", Message = "Internal server Error" });
-
+            var result = await userManager.CreateAsync(user, model.Password);
+            if (!result.Succeeded)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, new Response
+                {
+                    Status = "Error",
+                    Message = string.Join(", ", result.Errors.Select(e => e.Description))
+                });
             }
 
-            return Ok(new Response {Status= "Success", Message = "Usuario Creado" });
+            await userManager.AddToRoleAsync(user, "User");
+
+            return Ok(new Response { Status = "Success", Message = "Usuario Creado" });
 
         }
 
-        }
     }
+}
