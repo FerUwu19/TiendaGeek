@@ -44,60 +44,69 @@ CREATE TABLE ImagenProducto (
     RutaImagen VARCHAR(255),
     FOREIGN KEY (CodigoProducto) REFERENCES Producto(CodigoProducto)
 );
-
---Tabla de carrito--
+-- Crear la tabla Carrito
 CREATE TABLE Carrito (
-    CodigoCarrito INT IDENTITY(1,1) PRIMARY KEY,
-    CodigoUsuario INT,
-    CodigoProducto INT,
-    TotalCompra DECIMAL(10, 2),
-    FOREIGN KEY (CodigoUsuario) REFERENCES Usuario(CodigoUsuario),
-    FOREIGN KEY (CodigoProducto) REFERENCES Producto(CodigoProducto)
+    Id INT IDENTITY(1,1) PRIMARY KEY,
+    Monto FLOAT NOT NULL,
+    UsuarioId NVARCHAR(450) NULL,
+    CarritoTemporalId NVARCHAR(450) NULL,
+    Estado NVARCHAR(50) NULL,
+
+    -- Relaci贸n con IdentityUser
+    CONSTRAINT FK_Carrito_IdentityUser FOREIGN KEY (UsuarioId)
+    REFERENCES AspNetUsers(Id) -- Asumiendo que la tabla de usuarios es AspNetUsers
 );
 
---Tabla de orden--
-CREATE TABLE Orden (
-    CodigoOrden INT IDENTITY(1,1) PRIMARY KEY,
-    CodigoUsuario INT,
-    CodigoCarrito INT,
-    FechaOrden DATE,
-    FOREIGN KEY (CodigoUsuario) REFERENCES Usuario(CodigoUsuario),
-    FOREIGN KEY (CodigoCarrito) REFERENCES Carrito(CodigoCarrito)
+-- Crear la tabla ItemCarrito
+CREATE TABLE ItemCarrito (
+    Id INT IDENTITY(1,1) PRIMARY KEY,
+    Cantidad INT NOT NULL,
+    ProductoId INT NOT NULL,
+    CarritoId INT NOT NULL,
+
+    -- Relaci贸n con Producto
+    CONSTRAINT FK_ItemCarrito_Producto FOREIGN KEY (ProductoId)
+    REFERENCES Producto(CodigoProducto), -- Asumiendo que la tabla de productos es Producto
+
+    -- Relaci贸n con Carrito
+    CONSTRAINT FK_ItemCarrito_Carrito FOREIGN KEY (CarritoId)
+    REFERENCES Carrito(Id)
 );
+
 
 
 /*INSERTS*/
 -- Datos para la tabla Usuario --
 INSERT INTO Usuario (Rol, Nombre, PrimerApellido, SegundoApellido, Contrasena, Estado)
 VALUES 
-('Cliente', 'Juan', 'P閞ez', 'Garc韆', 'password123', 1), 
-('Cliente', 'Mar韆', 'L髉ez', 'Fern醤dez', 'password123', 1), 
-('Cliente', 'Carlos', 'Hern醤dez', 'Mart韓ez', 'password123', 1), 
-('Cliente', 'Ana', 'Mart韓', 'S醤chez', 'password123', 1), 
-('Cliente', 'Luis', 'G髆ez', 'Rodr韌uez', 'password123', 1);
+('Cliente', 'Juan', 'P茅rez', 'Garc铆a', 'password123', 1), 
+('Cliente', 'Mar铆a', 'L贸pez', 'Fern谩ndez', 'password123', 1), 
+('Cliente', 'Carlos', 'Hern谩ndez', 'Mart铆nez', 'password123', 1), 
+('Cliente', 'Ana', 'Mart铆n', 'S谩nchez', 'password123', 1), 
+('Cliente', 'Luis', 'G贸mez', 'Rodr铆guez', 'password123', 1);
 
 -- Datos para la tabla Categoria --
 INSERT INTO Categoria (Nombre, Descripcion)
 VALUES 
-('Figuras', 'Figuras de acci髇 y coleccionables'),
+('Figuras', 'Figuras de acci贸n y coleccionables'),
 ('Mangas', 'Libros de manga'),
-('C髆ics', 'C髆ics de varios g閚eros'),
+('C贸mics', 'C贸mics de varios g茅neros'),
 ('Videojuegos', 'Juegos de video para varias plataformas'),
 ('Ropa', 'Ropa y accesorios geek');
 
 -- Datos para la tabla Producto --
 INSERT INTO Producto (CodigoCategoria, Nombre, Descripcion, Precio, Unidades, Estado)
 VALUES 
-(1, 'Figura de Goku', 'Figura de acci髇 de Goku de Dragon Ball Z', 29.99, 100, 'Disponible'),
+(1, 'Figura de Goku', 'Figura de acci贸n de Goku de Dragon Ball Z', 29.99, 100, 'Disponible'),
 (1, 'Figura de Batman', 'Figura coleccionable de Batman', 19.99, 50, 'Disponible'),
 (2, 'Manga One Piece Vol. 1', 'Primer volumen del manga One Piece', 9.99, 200, 'Disponible'),
 (2, 'Manga Naruto Vol. 1', 'Primer volumen del manga Naruto', 9.99, 150, 'Disponible'),
-(3, 'C髆ic Spider-Man #1', 'Primer n鷐ero del c髆ic Spider-Man', 14.99, 75, 'Disponible'),
-(3, 'C髆ic X-Men #1', 'Primer n鷐ero del c髆ic X-Men', 14.99, 80, 'Disponible'),
+(3, 'C贸mic Spider-Man #1', 'Primer n煤mero del c贸mic Spider-Man', 14.99, 75, 'Disponible'),
+(3, 'C贸mic X-Men #1', 'Primer n煤mero del c贸mic X-Men', 14.99, 80, 'Disponible'),
 (4, 'Videojuego The Legend of Zelda', 'Videojuego para Nintendo Switch', 59.99, 30, 'Disponible'),
 (4, 'Videojuego Final Fantasy VII', 'Videojuego para PlayStation 4', 49.99, 40, 'Disponible'),
-(5, 'Camiseta Star Wars', 'Camiseta con dise駉 de Star Wars', 19.99, 120, 'Disponible'),
-(5, 'Gorra Pok閙on', 'Gorra con dise駉 de Pok閙on', 15.99, 90, 'Disponible');
+(5, 'Camiseta Star Wars', 'Camiseta con dise帽o de Star Wars', 19.99, 120, 'Disponible'),
+(5, 'Gorra Pok茅mon', 'Gorra con dise帽o de Pok茅mon', 15.99, 90, 'Disponible');
 
 -- Datos para la tabla ImagenProducto --
 INSERT INTO ImagenProducto (CodigoProducto, RutaImagen)
