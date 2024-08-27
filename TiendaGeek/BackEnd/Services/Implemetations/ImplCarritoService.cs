@@ -2,62 +2,89 @@
 using BackEnd.Services.Interfaces;
 using DAL.Interfaces;
 using Entities.Entities;
-using System.Security.Cryptography;
 
 namespace BackEnd.Services.Implemetations
 {
     public class ImplCarritoService : ICarritoService
     {
-        public ICarritoDAL carrito;
-        public ImplCarritoService(ICarritoDAL _carrito)
+        private readonly ICarritoDAL _carritoDAL;
+        private readonly IItemCarritoDAL _itemCarritoDAL;
+
+        public ImplCarritoService(ICarritoDAL carritoDAL, IItemCarritoDAL itemCarritoDAL)
         {
-            this.carrito = _carrito;
+            _carritoDAL = carritoDAL;
+            _itemCarritoDAL = itemCarritoDAL;
         }
 
-        public bool Add(CarritoModel carrito)
+        public bool CreateCarrito(Carrito carrito)
         {
-            return this.carrito.Add(Convertir(carrito));
+            return _carritoDAL.Add(carrito);
         }
 
-        public CarritoModel Get(int _id)
+        public Carrito GetCarritoById(int id)
         {
-            return Convertir(this.carrito.Get(_id));
+            return _carritoDAL.Get(id);
         }
 
-        public IEnumerable<CarritoModel> GetAll()
+        public IEnumerable<Carrito> GetAllCarritos()
         {
-            var list = this.carrito.GetAll();
-            var carrito = new List<CarritoModel>();
-            foreach (var item in list)
-            {
-                carrito.Add(Convertir(item));
-            }
-            return carrito;
+            return _carritoDAL.GetAll();
         }
 
-        private Carrito Convertir(CarritoModel _carrito)
+        public Carrito GetCarritoByUsuarioId(string usuarioId, string estado = "Incompleto")
         {
-            Carrito carrito = new Carrito()
-            {
-                CodigoCarrito = _carrito.CodigoCarrito,
-                CodigoProducto = _carrito.CodigoProducto,
-                CodigoUsuario = _carrito.CodigoUsuario,
-                TotalCompra = _carrito.TotalCompra
-            };
-            return carrito;
+            return _carritoDAL.GetCarritoByUsuarioId(usuarioId, estado);
         }
 
-        private CarritoModel Convertir(Carrito _carrito)
+        public Carrito GetCarritoByTemporalId(string carritoTemporalId, string estado = "Incompleto")
         {
-            CarritoModel carrito = new CarritoModel()
-            {
-                CodigoCarrito = _carrito.CodigoCarrito,
-                CodigoProducto = _carrito.CodigoProducto,
-                CodigoUsuario = _carrito.CodigoUsuario,
-                TotalCompra = _carrito.TotalCompra
-            };
-            return carrito;
+            return _carritoDAL.GetCarritoByTemporalId(carritoTemporalId, estado);
+        }
 
+        public bool UpdateCarrito(Carrito carrito)
+        {
+            return _carritoDAL.Update(carrito);
+        }
+
+        public bool DeleteCarrito(int id)
+        {
+            var carrito = _carritoDAL.Get(id);
+            return carrito != null && _carritoDAL.Remove(carrito);
+        }
+
+        public bool MergeCarritos(int usuarioCarritoId, int temporalCarritoId)
+        {
+            var usuarioCarrito = _carritoDAL.Get(usuarioCarritoId);
+            var temporalCarrito = _carritoDAL.Get(temporalCarritoId);
+
+            if (usuarioCarrito == null || temporalCarrito == null) return false;
+
+            return _carritoDAL.MergeCarritos(usuarioCarrito, temporalCarrito);
+        }
+
+        public IEnumerable<Carrito> GetCompletedCarritos(string usuarioId)
+        {
+            return _carritoDAL.GetCarritosCompletados(usuarioId);
+        }
+
+        public bool AddItemToCarrito(ItemCarrito itemCarrito)
+        {
+            return _itemCarritoDAL.Add(itemCarrito);
+        }
+
+        public bool UpdateItemInCarrito(ItemCarrito itemCarrito)
+        {
+            return _itemCarritoDAL.Update(itemCarrito);
+        }
+
+        public bool RemoveItemFromCarrito(int id)
+        {
+            return _itemCarritoDAL.Delete(id);
+        }
+
+        public IEnumerable<ItemCarrito> GetItemsByCarritoId(int carritoId)
+        {
+            return _itemCarritoDAL.GetItemsByCarritoId(carritoId);
         }
     }
 }

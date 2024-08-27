@@ -37,7 +37,7 @@ public partial class TiendaGeekContext : DbContext
 
     public virtual DbSet<ImagenProducto> ImagenProductos { get; set; }
 
-    public virtual DbSet<Orden> Ordens { get; set; }
+    public virtual DbSet<ItemCarrito> ItemCarritos { get; set; }
 
     public virtual DbSet<Producto> Productos { get; set; }
 
@@ -45,7 +45,7 @@ public partial class TiendaGeekContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Server=DESKTOP-T60H3NE\\SQLEXPRESS;Database=TiendaGeek;Integrated Security=True;Trusted_Connection=True; TrustServerCertificate=True;");
+        => optionsBuilder.UseSqlServer("Server=DESKTOP-LLJVFI6\\SQLEXPRESS;Database=TiendaGeek;Integrated Security=True;Trusted_Connection=True; TrustServerCertificate=True;");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -117,19 +117,17 @@ public partial class TiendaGeekContext : DbContext
 
         modelBuilder.Entity<Carrito>(entity =>
         {
-            entity.HasKey(e => e.CodigoCarrito).HasName("PK__Carrito__20E75EFA8E9F4FB3");
+            entity.HasKey(e => e.Id).HasName("PK__Carrito__3214EC07B3F6FEF3");
 
             entity.ToTable("Carrito");
 
-            entity.Property(e => e.TotalCompra).HasColumnType("decimal(10, 2)");
+            entity.Property(e => e.CarritoTemporalId).HasMaxLength(450);
+            entity.Property(e => e.Estado).HasMaxLength(50);
+            entity.Property(e => e.UsuarioId).HasMaxLength(450);
 
-            entity.HasOne(d => d.CodigoProductoNavigation).WithMany(p => p.Carritos)
-                .HasForeignKey(d => d.CodigoProducto)
-                .HasConstraintName("FK__Carrito__CodigoP__5441852A");
-
-            entity.HasOne(d => d.CodigoUsuarioNavigation).WithMany(p => p.Carritos)
-                .HasForeignKey(d => d.CodigoUsuario)
-                .HasConstraintName("FK__Carrito__CodigoU__534D60F1");
+            entity.HasOne(d => d.Usuario).WithMany(p => p.Carritos)
+                .HasForeignKey(d => d.UsuarioId)
+                .HasConstraintName("FK_Carrito_IdentityUser");
         });
 
         modelBuilder.Entity<Categorium>(entity =>
@@ -186,19 +184,21 @@ public partial class TiendaGeekContext : DbContext
                 .HasConstraintName("FK__ImagenPro__Codig__5070F446");
         });
 
-        modelBuilder.Entity<Orden>(entity =>
+        modelBuilder.Entity<ItemCarrito>(entity =>
         {
-            entity.HasKey(e => e.CodigoOrden).HasName("PK__Orden__1B9107A53D769B3D");
+            entity.HasKey(e => e.Id).HasName("PK__ItemCarr__3214EC07997C656E");
 
-            entity.ToTable("Orden");
+            entity.ToTable("ItemCarrito");
 
-            entity.HasOne(d => d.CodigoCarritoNavigation).WithMany(p => p.Ordens)
-                .HasForeignKey(d => d.CodigoCarrito)
-                .HasConstraintName("FK__Orden__CodigoCar__5812160E");
+            entity.HasOne(d => d.Carrito).WithMany(p => p.ItemCarritos)
+                .HasForeignKey(d => d.CarritoId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_ItemCarrito_Carrito");
 
-            entity.HasOne(d => d.CodigoUsuarioNavigation).WithMany(p => p.Ordens)
-                .HasForeignKey(d => d.CodigoUsuario)
-                .HasConstraintName("FK__Orden__CodigoUsu__571DF1D5");
+            entity.HasOne(d => d.Producto).WithMany(p => p.ItemCarritos)
+                .HasForeignKey(d => d.ProductoId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_ItemCarrito_Producto");
         });
 
         modelBuilder.Entity<Producto>(entity =>
@@ -243,6 +243,22 @@ public partial class TiendaGeekContext : DbContext
                 .HasMaxLength(100)
                 .IsUnicode(false);
         });
+
+        modelBuilder.Entity<Carrito>()
+               .HasIndex(c => c.UsuarioId);
+
+        modelBuilder.Entity<Carrito>()
+            .HasMany(c => c.ItemCarritos) // Un Carrito tiene muchos ItemsCarrito
+            .WithOne(i => i.Carrito) // Un ItemCarrito pertenece a un Carrito
+            .HasForeignKey(i => i.CarritoId); // Clave foránea en ItemCarrito
+
+        modelBuilder.Entity<ItemCarrito>()
+            .HasOne(i => i.Producto) // Un ItemCarrito tiene un Producto
+            .WithMany() // Un Producto puede estar en muchos ItemCarrito (sin navegación de vuelta aquí, opcional)
+            .HasForeignKey(i => i.ProductoId); // Clave foránea en ItemCarrito
+
+        modelBuilder.Entity<Carrito>().ToTable("Carritos");
+        modelBuilder.Entity<ItemCarrito>().ToTable("ItemCarritos");
 
         OnModelCreatingPartial(modelBuilder);
     }

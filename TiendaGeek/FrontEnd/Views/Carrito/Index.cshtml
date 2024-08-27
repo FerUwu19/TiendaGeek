@@ -1,0 +1,150 @@
+﻿@{
+	Layout = "_Layout";
+}
+
+@model List<FrontEnd.Models.ItemCarritoViewModel>
+
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" asp-append-version="true" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+
+<div class="container pt-4">
+	<div class="row">
+		<h1 style="color:black; font-weight:600;">Detalle del carrito</h1>
+	</div>
+</div>
+
+<div class="untree_co-section before-footer-section">
+	<div class="container">
+		<div class="row mb-5">
+			<div class="site-blocks-table">
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Imagen</th>
+							<th>Producto</th>
+							<th>Precio</th>
+							<th>Cantidad</th>
+							<th>Total</th>
+							<th>Acción</th>
+						</tr>
+					</thead>
+					<tbody>
+						@foreach (var item in Model)
+						{
+							<tr>
+								<td class="product-thumbnail">
+									<img src="@item.Producto" alt="Image" class="img-fluid">
+								</td>
+								<td class="product-name">
+									<h2 class="h5 text-black">@item.Producto.Nombre</h2>
+								</td>
+								<td>$@item.Producto.Precio</td>
+								<td>
+									<form asp-controller="ItemCarrito" asp-action="ActualizarCantidad" method="post" id="form-@item.Id">
+										<input type="hidden" name="itemId" value="@item.Id" />
+										<div class="input-group mb-3 d-flex align-items-center" style="max-width: 120px;">
+											<div class="input-group-prepend">
+												<button name="action" value="decrease" class="btn btn-outline-black" type="submit" form="form-@item.Id">&minus;</button>
+											</div>
+											<input type="text" class="form-control text-center" value="@item.Cantidad" readonly>
+											<div class="input-group-append">
+												<button name="action" value="increase" class="btn btn-outline-black" type="submit" form="form-@item.Id">&plus;</button>
+											</div>
+										</div>
+									</form>
+								</td>
+								<td>$@(item.Producto.Precio * item.Cantidad)</td>
+								<td>
+									<form asp-controller="ItemCarrito" asp-action="EliminarDelCarrito" method="post">
+										<input type="hidden" name="itemId" value="@item.Id" />
+										<button type="submit" class="btn btn-black btn-sm">X</button>
+									</form>
+								</td>
+							</tr>
+						}
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-6">
+				@if (TempData["Mensaje"] != null)
+				{
+					<div class="alert alert-success" role="alert">
+						@TempData["Mensaje"]
+					</div>
+				}
+
+				@if (TempData["Error"] != null)
+				{
+					<div class="alert alert-danger" role="alert">
+						@TempData["Error"]
+					</div>
+				}
+
+				<div class="row mb-5">
+					<div class="col-md-6">
+						<a class="btn btn-outline-black btn-sm btn-block" asp-controller="Shop" asp-action="Index">Seguir comprando</a>
+					</div>
+				</div>
+				<div class="row mb-5">
+					<div class="col-md-6">
+						<a class="btn btn-outline-black btn-sm btn-block" asp-controller="Carrito" asp-action="CarritosCompletados">Historial de compras</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 pl-5">
+				<div class="row justify-content-end">
+					<div class="col-md-7">
+						<div class="row">
+							<div class="col-md-12 text-right border-bottom mb-5">
+								<h3 class="text-black h4 text-uppercase">Carrito</h3>
+							</div>
+						</div>
+						<div class="row mb-3">
+							<div class="col-md-6">
+								<span class="text-black">Subtotal</span>
+							</div>
+							<div class="col-md-6 text-right">
+								<strong class="text-black">$@ViewBag.TotalCarrito</strong>
+							</div>
+						</div>
+						<div class="row mb-5">
+							<div class="col-md-6">
+								<span class="text-black">Total</span>
+							</div>
+							<div class="col-md-6 text-right">
+								<strong class="text-black">$@ViewBag.TotalCarrito</strong>
+							</div>
+						</div>
+
+						<div class="row">
+							<form asp-controller="ItemCarrito" asp-action="PagarCarrito" method="post">
+								@foreach (var item in Model)
+								{
+									<input type="hidden" name="itemIds" value="@item.Id" />
+									<input type="hidden" name="quantities" value="@item.Cantidad" />
+								}
+								<input type="hidden" name="montoTotal" value="@ViewBag.TotalCarrito" />
+
+								<div class="col-md-12">
+									<button type="submit" class="btn btn-black btn-lg py-3 btn-block"
+									@(Model.Count == 0 || Model.Any(item => item.Cantidad <= 0) ? "disabled" : "")>
+										Pagar
+									</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/tiny-slider.js"></script>
+<script src="js/custom.js"></script>

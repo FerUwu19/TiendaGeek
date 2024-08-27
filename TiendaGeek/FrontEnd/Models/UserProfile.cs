@@ -1,0 +1,13 @@
+﻿namespace FrontEnd.Models
+{
+    public class UserProfile
+    {
+        public string userId { get; set; }
+        public string UserName { get; set; }
+        public string Email { get; set; }
+        // Agrega otras propiedades del perfil según sea necesario
+        // public string Nombre { get; set; }
+        // public string Apellido { get; set; }
+        // public string FotoPerfil { get; set; }
+    }
+}

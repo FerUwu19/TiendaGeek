@@ -38,13 +38,17 @@ builder.Services.AddScoped<ICategoriumService, CategoriumService>();
 builder.Services.AddScoped<IHistorialPedidoDAL, ImplHistorialPedidoDAL>();
 builder.Services.AddScoped<IHistorialPedidoServices, ImplHistorialPedidoServices>();
 
+builder.Services.AddScoped<ICarritoDAL, ImplCarritoDAL>();
+builder.Services.AddScoped<ICarritoService, ImplCarritoService>();
+
+builder.Services.AddScoped<IItemCarritoDAL, ImplItemCarritoDAL>();
+builder.Services.AddScoped<IItemCarritoService, ItemCarritoService>();
+
 builder.Services.AddScoped<IContactoDAL, ContactoDALImpl>();
 builder.Services.AddScoped<IContactoService, ContactoService>();
 
 builder.Services.AddScoped<IUnidadDeTrabajo, UnidadDeTrabajo>();
 
-builder.Services.AddScoped<ICarritoDAL, ImplCarritoDAL>();
-builder.Services.AddScoped<ICarritoService, ImplCarritoService>();
 
 builder.Services.AddScoped<ITokenService, TokenService>();
 

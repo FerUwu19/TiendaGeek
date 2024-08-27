@@ -13,42 +13,28 @@
 <div class="container mt-lg-5">
     <div class="row">
         <div>
-            <a class="text-decoration-none " asp-action="Index"><i class="fa-solid fa-arrow-left"></i> Seguir comprando</a>
+            <a class="text-decoration-none" asp-action="Index"><i class="fa-solid fa-arrow-left"></i> Seguir comprando</a>
         </div>
+
         <!-- Carousel for product images -->
         <div class="col-md-4 mt-2 mb-4">
             <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                    <div id="productImagesCarousel" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            @if (Model.Imagenes != null && Model.Imagenes.Count > 0)
-                            {
-                                @for (int i = 0; i < Model.Imagenes.Count; i++)
-                                {
-                                    <div class="carousel-item @(i == 0 ? "active" : "")">
-                                        <img src="@Model.Imagenes[i].RutaImagen" class="d-block w-100" alt="...">
-                                    </div>
-                                }
-                            }
-                            else
-                            {
-                                <div class="carousel-item active">
-                                    <img src="~/images/imgNotFound.png" class="d-block w-100" alt="Imagen por defecto">
-                                </div>
-                            }
-
+                    @if (Model.Imagenes != null && Model.Imagenes.Count > 0)
+                    {
+                        @for (int i = 0; i < Model.Imagenes.Count; i++)
+                        {
+                            <div class="carousel-item @(i == 0 ? "active" : "")">
+                                <img src="@Model.Imagenes[i].RutaImagen" class="d-block w-100" alt="...">
+                            </div>
+                        }
+                    }
+                    else
+                    {
+                        <div class="carousel-item active">
+                            <img src="~/images/imgNotFound.png" class="d-block w-100" alt="Imagen por defecto">
                         </div>
-                        <a class="carousel-control-prev" href="#productImagesCarousel" role="button" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#productImagesCarousel" role="button" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </a>
-                    </div>
-
-
+                    }
                 </div>
                 <a class="carousel-control-prev" href="#productCarousel" role="button" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -60,29 +46,21 @@
                 </a>
             </div>
         </div>
+
         <!-- Product information -->
         <div class="col-md-6 mt-2">
             <dl class="row">
                 <dd class="h2">@Html.DisplayFor(model => model.Nombre)</dd>
-
                 <dd class="h5">@Html.DisplayFor(model => model.Descripcion)</dd>
-
                 <dd class="col-sm-8"><strong>@Html.DisplayFor(model => model.Precio)</strong></dd>
-
                 <dd class="col-sm-8">@Html.DisplayFor(model => model.Unidades)</dd>
-
                 <dd class="col-sm-8">@Html.DisplayFor(model => model.Estado)</dd>
             </dl>
-            <div class="mt-4">
-                <a class="btn btn-success border-0 mt-4" style="background-color:#f9bf29;" asp-action="">
-                    <i class="fa-solid fa-cart-shopping fa-xs me-1" style="color: #ffffff;"></i>
-                    Agregar
-                </a>
-            </div>
+
+          
         </div>
     </div>
 </div>
-
 
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/tiny-slider.js"></script>

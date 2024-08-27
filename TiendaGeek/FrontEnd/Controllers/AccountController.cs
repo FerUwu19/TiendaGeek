@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
 using FrontEnd.ApiModels;
+using FrontEnd.Helpers.Implemetations;
 
 namespace FrontEnd.Controllers
 {
@@ -98,8 +99,10 @@ namespace FrontEnd.Controllers
         {
             if (ModelState.IsValid)
             {
+                model.RememberLogin = true;
+                model.ReturnUrl = " ";
                 var isRegistered = SecurityHelper.Register(model);
-
+                
                 if (isRegistered)
                 {
                     return RedirectToAction("Login");
@@ -113,6 +116,45 @@ namespace FrontEnd.Controllers
 
             return View(model);
         }
+
+
+        // Método para mostrar el perfil del usuario
+        public IActionResult Profile()
+        {
+            var username = User.FindFirstValue(ClaimTypes.Name);
+
+            if (username == null)
+            {
+                return RedirectToAction("Login");
+            }
+
+            try
+            {
+                var userProfile = SecurityHelper.GetUserProfile(username); // Llama al método sincrónico
+                return View(userProfile);
+            }
+            catch (Exception ex)
+            {
+                ViewBag.ErrorMessage = $"Error al obtener el perfil: {ex.Message}";
+                return View("Error");
+            }
+        }
+
+        [HttpPost]
+        public IActionResult Logout()
+        {
+            bool result = SecurityHelper.Logout();
+
+            if (result)
+            {
+                return RedirectToAction("Login");
+            }
+            else
+            {
+                ViewBag.Message = "Error during logout.";
+                return View("Error");
+            }
+         }
 
     }
 }

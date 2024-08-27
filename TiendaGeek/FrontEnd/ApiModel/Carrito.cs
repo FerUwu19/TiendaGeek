@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Entities.Entities;
+namespace FrontEnd.ApiModel;
 
-public partial class Carrito
+public class Carrito
 {
     public int Id { get; set; }
 
@@ -15,7 +15,8 @@ public partial class Carrito
 
     public string? Estado { get; set; }
 
-    public virtual ICollection<ItemCarrito>? ItemCarritos { get; set; } = new List<ItemCarrito>();
+    public virtual ICollection<ItemCarrito> ItemCarritos { get; set; } = new List<ItemCarrito>();
 
-    public virtual AspNetUser? Usuario { get; set; }
+    public virtual AspNetUserViewModel? Usuario { get; set; }
 }
+

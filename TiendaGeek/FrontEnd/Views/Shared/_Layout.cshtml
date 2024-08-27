@@ -24,21 +24,56 @@
                     {
                         <li><a class="nav-link" asp-controller="Producto" asp-action="Index">Productos</a></li>
                         <li><a class="nav-link" asp-controller="Categorium" asp-action="Index">Categoría</a></li>
-                        <li><a class="nav-link" asp-controller="Contacto" asp-action="Index">Mensajes contacto</a></li>
+                        <li><a class="nav-link" asp-controller="Contacto" asp-action="Index">Mensajes</a></li>
                         <li><a class="nav-link" asp-controller="ImagenProducto" asp-action="Index">Imagen</a></li>
                     }
                     else
                     {
                         <li><a class="nav-link" asp-controller="Producto" asp-action="Index">Productos</a></li>
                         <li><a class="nav-link" asp-controller="Contacto" asp-action="Contacto">Contacto</a></li>
-                        <li><a class="nav-link" asp-controller="Carrito" asp-action="Index"> <i class="fa-solid fa-cart-shopping " style="color: #ffffff;"></i></a></li>
+                        <!--<li>
+
+                        <a class="nav-link" asp-controller="Carrito" asp-action="Index"> <i class="fa-solid fa-cart-shopping " style="color: #ffffff;"></i></a>
+
+                        </li>-->
+                    }
+
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Account" asp-action="Profile">Mi Perfil</a>
+                        </li>
+                        <!--
+                        <li class="nav-item">
+                            <button onclick="logout()" class="nav-link btn btn-link" style="color:white;">Cerrar sesión</button>
+                        </li>
+                        -->
+                    }
+                    else
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Account" asp-action="Login">Inicio sesión</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Account" asp-action="Register">Registro</a>
+                        </li>
                     }
                 </ul>
+                <!--
+                <div class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
+                    <div class="nav-item dropdown">
+                        <a href="#"
+                           class="nav-link"
+                           data-bs-toggle="dropdown">
+                            <i class="fa-solid fa-user icon"></i>
+                        </a>
 
-                <ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
-                    <li><a class="nav-link" asp-controller="Account" asp-action="Login"> <i class="fa-solid fa-user " style="color: #ffffff;"></i></a></li>
-                    <li><a class="nav-link" asp-controller="Account" asp-action="Register"> Registro</a></li>
-                </ul>
+                        <div class="dropdown-menu m-0 bg-secondary rounded-0">
+                            <a class="dropdown-item" asp-controller="Account" asp-action="Login">Inicio sesión</a>
+                            <a class="nav-link" asp-controller="Account" asp-action="Register"> Registro</a>
+                        </div>
+                    </div>
+                </div>-->
             </div>
         </div>
     </nav>
@@ -95,6 +130,38 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/tiny-slider.js"></script>
     <script src="js/custom.js"></script>
+    <script>
+        function logout() {
+            // Elimina el token del almacenamiento local
+            localStorage.removeItem('token');
+
+            // Opcionalmente, puedes hacer una solicitud al backend si decides implementar la invalidación de tokens en el backend
+            fetch('/api/Auth/logout', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ token: getTokenFromStorage() }) // Enviar el token para revocar (opcional)
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Error en la solicitud de revocación del token');
+                    }
+                    console.log('Token revocado exitosamente');
+                })
+                .catch(error => {
+                    console.error('Error al revocar el token:', error);
+                });
+
+            // Redirige al usuario a la página de inicio de sesión
+            window.location.href = 'Account/login';
+        }
+
+        // Función para obtener el token del almacenamiento local
+        function getTokenFromStorage() {
+            return localStorage.getItem('token');
+        }
+    </script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

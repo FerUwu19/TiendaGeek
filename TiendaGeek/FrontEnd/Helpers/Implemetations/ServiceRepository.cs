@@ -37,7 +37,5 @@ namespace FrontEnd.Helpers.Implemetations
             return Client.DeleteAsync(url).Result;
         }
 
-
-
     }
 }

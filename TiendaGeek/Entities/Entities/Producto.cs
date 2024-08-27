@@ -19,9 +19,9 @@ public partial class Producto
 
     public string? Estado { get; set; }
 
-    public virtual ICollection<Carrito> Carritos { get; set; } = new List<Carrito>();
-
     public virtual Categorium? CodigoCategoriaNavigation { get; set; }
 
     public virtual ICollection<ImagenProducto> ImagenProductos { get; set; } = new List<ImagenProducto>();
+
+    public virtual ICollection<ItemCarrito> ItemCarritos { get; set; } = new List<ItemCarrito>();
 }

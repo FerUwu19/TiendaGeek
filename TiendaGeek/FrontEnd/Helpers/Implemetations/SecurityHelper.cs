@@ -2,23 +2,27 @@
 using FrontEnd.Helpers.Interfaces;
 using FrontEnd.Models;
 using Newtonsoft.Json;
-using NuGet.Common;
+using Microsoft.AspNetCore.Http;
+using System.Net.Http;
 
 namespace FrontEnd.Helpers.Implemetations
 {
     public class SecurityHelper : ISecurityHelper
     {
-        IServiceRepository ServiceRepository;
+        private readonly IServiceRepository ServiceRepository;
+        private readonly IHttpContextAccessor HttpContextAccessor;
 
-        public SecurityHelper(IServiceRepository serviceRepository)
+        public SecurityHelper(IServiceRepository serviceRepository, IHttpContextAccessor httpContextAccessor)
         {
             ServiceRepository = serviceRepository;
+            HttpContextAccessor = httpContextAccessor;
         }
 
         public LoginAPI GetUser(UserViewModel user)
         {
             return new LoginAPI();
         }
+
         public LoginAPI Login(UserViewModel user)
         {
             try
@@ -54,7 +58,6 @@ namespace FrontEnd.Helpers.Implemetations
             }
         }
 
-
         public bool Register(UserViewModel user)
         {
             try
@@ -74,6 +77,61 @@ namespace FrontEnd.Helpers.Implemetations
             }
         }
 
+        public UserProfile GetUserProfile(string username)
+        {
+            try
+            {
+                HttpResponseMessage responseMessage = ServiceRepository.GetResponse($"/api/Auth/{username}");
+
+                var content = responseMessage.Content.ReadAsStringAsync().Result; // Usa .Result en lugar de await
+
+                if (!responseMessage.IsSuccessStatusCode)
+                {
+                    throw new Exception("Error en la solicitud: " + responseMessage.StatusCode);
+                }
+
+                // Deserializa el contenido JSON en un objeto UserModel
+                UserProfile userProfile = JsonConvert.DeserializeObject<UserProfile>(content);
+
+                return userProfile;
+            }
+            catch (JsonReaderException ex)
+            {
+                Console.WriteLine("Error al deserializar JSON: " + ex.Message);
+                throw;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error en la solicitud: " + ex.Message);
+                throw;
+            }
+        }
+
+        public bool Logout()
+        {
+            try
+            {
+                HttpResponseMessage responseMessage = ServiceRepository.PostResponse("/api/Auth/logout", null);
+
+                if (!responseMessage.IsSuccessStatusCode)
+                {
+                    throw new Exception("Error en la solicitud: " + responseMessage.StatusCode);
+                }
+
+                // Eliminar el token del almacenamiento del cliente
+                var context = HttpContextAccessor.HttpContext;
+                if (context != null)
+                {
+                    context.Session.Remove("token");
+                }
+
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
 
     }
 }

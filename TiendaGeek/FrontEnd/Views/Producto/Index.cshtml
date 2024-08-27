@@ -90,6 +90,20 @@
                                     <h3 class="product-title mt-2">@item.Nombre</h3>
                                     <strong class="product-price">$@item.Precio</strong>
                                 </a>
+                                <!-- Formulario para agregar al carrito -->
+                                <div class="mt-4">
+                                    <form asp-controller="ItemCarrito" asp-action="Create" method="post">
+                                        <input type="hidden" name="ProductoId" value="@item.CodigoProducto" />
+                                        <input type="hidden" name="Cantidad" value="1" />
+                                        <input type="hidden" name="Precio" value="@String.Format("{0:0.00}", item.Precio)" />
+
+                                        @*   <button type="submit" class="btn btn-success border-0 mt-4" style="background-color:#f9bf29;">
+                                            <i class="fa-solid fa-cart-shopping fa-xs me-1" style="color: #ffffff;"></i>
+                                            Agregar al carrito
+                                    </button>*@
+                                    </form>
+                                </div>
+
                                 <div class="row justify-content-center">
                                     @if (User.IsInRole("Admin"))
                                     {
